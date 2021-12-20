@@ -1,8 +1,20 @@
 * {font-family: Arial, Helvetica, sans-serif;}
 
 body {
-  /*background-color: rgb(209, 117, 209);*/
-  background: linear-gradient(180deg, red, orange, yellow, green, blue, purple)
+  background-color: rgb(209, 117, 209);
+  /*background: linear-gradient(180deg, red, orange, yellow, green, blue, purple)*/
+
+  display: grid;
+  grid-template-areas: 
+  "header header "
+  "title title"
+  "main main"
+  "section aside"
+  "footer footer";
+
+  grid-template-rows: 30px 1fr 40px;
+  grid-template-columns: 1fr 750px;
+
   
 }
 
@@ -12,29 +24,61 @@ h1 {
 }
 
 .bloco {
-  margin-left: 30px;
-  margin-right: 200px;
+  /*margin-left: 30px;
+  margin-right: 200px;*/
+  margin-left: 0px;
+  margin-right: 10px;
   color: black;
   text-align: justify;
-  padding-left: 400px;
+  /*padding-left: 400px;*/
+  padding-left: 30px;
 }
 
-.busca {
+/*.busca {
   font-size: 20px;
   align: center;
+}*/
+
+/*button {
+  align: center;
+}
+*/
+header {
+  grid-area: header;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  padding-bottom: 10px;
 }
 
-button {
-  align: center;
+title {
+  grid-area: title;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+main {
+  grid-area: main;
+  align-items: center;
+  margin-left: 500px;
+  padding-top: 10px;
 }
 
 section {
-  margin-left: 20px;
+  /*margin-left: 20px;
   margin-right: 10px;
-  position: absolute;
+  position: absolute;*/
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
 }
 
 footer {
-  position: absolute;
-  margin-top: 150px;
+  /*position: absolute;
+  margin-top: 150px;*/
+  grid-area: footer;
 }
