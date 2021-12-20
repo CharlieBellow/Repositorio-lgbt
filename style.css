@@ -1,0 +1,40 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+  /*background-color: rgb(209, 117, 209);*/
+  background: linear-gradient(180deg, red, orange, yellow, green, blue, purple)
+  
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.bloco {
+  margin-left: 30px;
+  margin-right: 200px;
+  color: black;
+  text-align: justify;
+  padding-left: 400px;
+}
+
+.busca {
+  font-size: 20px;
+  align: center;
+}
+
+button {
+  align: center;
+}
+
+section {
+  margin-left: 20px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+footer {
+  position: absolute;
+  margin-top: 150px;
+}
