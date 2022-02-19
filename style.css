@@ -13,6 +13,13 @@
   --green: #B6F06C;
 }
 
+/* incluir os comentários na página texto e separar os arquivos css */
+/* fazer aquele esquema de aproveitar o mesmo html (e ver se funciona com o CSS tbm)  */
+/* separar os arquivos CSS um pra cada página (apagar o que não é utilizado na página específica) */
+
+/* na ágina texto:
+	< !-- incluir uma div com o campo: "como citar esse artigo"com a opção de botão pra pessoa copiar a citação -->< !-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
+*/
 
 body {
   background-color: white;
