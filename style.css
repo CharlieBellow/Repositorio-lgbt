@@ -1,13 +1,145 @@
-* {font-family: Arial, Helvetica, sans-serif;}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #333333;
+}
+
+/*  mudar as cores dos textos (criar as variáveis para as cores) */
 
 body {
-  background-color: rgb(209, 117, 209);
-  /*background: linear-gradient(180deg, red, orange, yellow, green, blue, purple)*/
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  background: #B6F06C;
+}
+
+header .titulos {
+  flex-direction: row;
+  padding: 0 8px;
+  margin: 0 8px;
+  border: 0 8px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+main {
+  /*align-items: center;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  padding-left: 0px;
+  margin-left: 0px;;
+  border-left: 0px;
+}
+
+footer {
+  width: 1336px;
+  height: 54px;
+  top: 567px;
+  background: #B6F06C;
+  padding: 16px;
+}
+
+
+/* FILTRO --------------------------- */
+.filtro {
+  width: 287px;
+  height: 559px;
+  left: 16px;
+  margin: 0px;
+  background: #DE84F0;
+  border-radius: 0px 100px 100px 0px;
+  
+}
+
+.formFiltro input{
+margin-top: 16px;
+margin-left: 32px;
+
+}
+
+form .h3 {
+padding-top: 16px;
+margin-left: 32px;
+}
+
+/* BARRA DE BUSCA ------------------ */
+.buscar button {
+  /*position: absolute;*/
+  width: 120px;
+  height: 40px;
+  left: 725px;
+  top: 150px;
+  background: #DE84F0;
+  border: 2px solid #A261AF;
+  color: #A261AF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  /* fazer o botão "pesquisar"mudar de cor quando passa o mouse */
+
+}
+
+.barraDeBusca {
+  /*position: absolute;*/
+  /*width: 360px;*/
+  height: 40px;
+  left: 352px;
+  top: 150px;
+  font-size: 16px;
+  font-weight: thin;
+  padding-left: 16px; /* colocar o texto mais pro lado */
+  background: #FFFFFF;
+  border: 2px solid #DE84F0;
+  box-sizing: border-box;
+  border-radius: 24px;
+  
+}
+
+
+/* FILTRO E TEXTO (CONTEÚDO) -------- */
+.conteudo {
+  display: flex;
+  flex-direction: row;
+}
+
+/* TEXTO CORRIDO (RESULTADO DAS BUSCAS)------- */
+.bloco {
+  /*position: absolute;*/
+  /*width: 470px;*/
+  /*height: 650px;*/
+  /*left: 475px;*/
+  /*top: 200px;*/
+  text-align: justify;
+  margin: 100px 80px 32px 80px;
+}
+
+.busca {
+  margin: 60px 0px 0px 200px;
+}
+
+aside h2 {
+  margin-bottom: 16px;
+}
+
+/* fazer o estilo os links dos textos-------------- */
+
+/* LIXO: ---------------------- */
+
+/*body {
 
   display: grid;
   grid-template-areas: 
   "header header "
-  "title title"
   "main main"
   "section aside"
   "footer footer";
@@ -15,24 +147,22 @@ body {
   grid-template-rows: 30px 1fr 40px;
   grid-template-columns: 1fr 750px;
 
-  
-}
+}*/
 
-h1 {
+/*h1 {
   color: black;
   text-align: center;
-}
+}*/
 
-.bloco {
-  /*margin-left: 30px;
-  margin-right: 200px;*/
-  margin-left: 0px;
-  margin-right: 10px;
-  color: black;
-  text-align: justify;
+/*.bloco div {
+  /*margin-left: 30px;*/
+  /*margin-left: 0px;
+  margin-right: 10px;*/
+  
   /*padding-left: 400px;*/
-  padding-left: 30px;
-}
+  /*padding-left: 30px;
+
+}*/
 
 /*.busca {
   font-size: 20px;
@@ -43,42 +173,57 @@ h1 {
   align: center;
 }
 */
-header {
-  grid-area: header;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 8px;
-  padding-bottom: 10px;
-}
+/*header {
+  /*grid-area: header;
+}*/
 
-title {
-  grid-area: title;
-  margin-left: 500px;
+/*title {
+ /* grid-area: title;*/
+/*  margin-left: 500px;
   margin-top: 100px;
-}
+}*/
 
-main {
-  grid-area: main;
-  align-items: center;
-  margin-left: 500px;
-  padding-top: 10px;
-}
+/*main {
+  /*grid-area: main;*/
+  /*margin-left: 500px;*/
+  /*padding-top: 10px;
 
-section {
+}*/
+
+/*section {
   /*margin-left: 20px;
   margin-right: 10px;
   position: absolute;*/
-  grid-area: section;
-}
+  /*grid-area: section;*/
+  /*width: 970px;
+}*/
 
-aside {
+/*aside {
   grid-area: aside;
-}
+}*/
 
-footer {
-  /*position: absolute;
-  margin-top: 150px;*/
-  grid-area: footer;
-}
+/*.formFiltro {
+  /*position:absolute;*/
+  /*left: 16px;*/
+  /*top: 50px;*/
+  /* aumentar o espaço entre os nomes e estilizar a bolinha de checar 
+
+}*/
+
+/*section .caixas .roxo .filtro form .texto {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+}*/
+
+/*.texto {
+  position: absolute;*/
+  /*width: 470px;
+}*/
+
+/*.bloco div {
+  /*margin-right: 35px;*/
+  /*text-align: justify;*/
+  /*width: 70%;
+}*/
