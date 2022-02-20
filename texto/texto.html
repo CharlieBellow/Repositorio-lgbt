@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>texto buscado</title>
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="./style-texto.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 </head>
 <body>
@@ -62,11 +63,10 @@
 						</form>
 				</div>
 				<aside class="bloco">
-
-					<!--fazer os links dos textos-->
-          
+				<!--fazer os links dos textos-->
+        	<div class="flexbox">
 						<h2>Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior</h2>
-              <h3>Resumo sugerido: </h3> <br>
+            <h3>Resumo sugerido: </h3> <br>
 						O presente artigo trata do acesso e da permanência da população trans junto ao ensino superior. Paralelamente a uma revisão bibliográfica concernente ao tema, é apresentada uma pesquisa de campo composta por seis entrevistas abertas com mulheres trans e travestis e uma entrevista com um homem trans. Os sujeitos abordados pertencem a diferentes raças/etnias, classes sociais e frequentam diferentes universidades. Os resultados apontam que o acesso à universidade foi facilitado por conquistas específicas do movimento trans – como a implementação legal e o direito de utilização do nome social para travestis e transexuais em instituições de ensino que aderiram à legislação e nas avaliações nacionais como o ENEM – e por conquistas mais amplas, destacadas as políticas governamentais voltadas ao acesso de minorias étnicas e raciais de baixa renda, via oferta de vagas em universidades públicas federais e estaduais pelo sistema SISU, e oferta de bolsas de estudos em universidades privadas e confessionais, pelo PROUNI. Também foi fundamental o recurso de projetos sociais, como o “cursinho preparatório”, voltados a travestis e transexuais. Por outro lado, ainda são isolados os casos de políticas públicas de permanência relacionadas à população trans, inexistindo oferta e manutenção de políticas públicas específicas. Foram relatadas dificuldades relativas ao pagamento de matrícula e mensalidades da universidade; à utilização de banheiro segundo o gênero de identificação; ao acesso à moradia estudantil e a bolsas de auxílio-alimentação; e a falta de trato adequado por parte de docentes e funcionárias/os não capacitadas/os a lidarem com pessoas trans. Desta forma, conclui-se que a participação na militância trans no contexto universitário constitui elemento importante para a transformação deste ambiente, contribuindo para a mudança de paradigmas; a aceitação das subjetividades; o reconhecimento de direitos; e o respeito à diversidade humana.<br><br>
             <strong>Palavras-chave</strong> Travestilidades. Transexualidades. Universidade..</p>
             <br><br>
@@ -80,15 +80,78 @@
             </p>
             <br> <br>
 
-            <p>Baixe o arquivo completo 
+          	<p>Baixe o arquivo completo 
 							<a href="./scote - Trans-formando a universidade_ um estudo__sobre o acesso e a permanência de pessoas Trans__no Ensino Superior.pdf">aqui</a> 
 						</p> <br> <br>
 						<p>Tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse 
 							<a href="mailto:charliebftm@gmail.com">Email</a> 
 						</p>
+					</div>
+					<!-- incluir uma div com o campo: "como citar esse artigo" com a opção de botão pra pessoa copiar a citação -->
+				<div class="citacao"><h3>Como citar:</h3> <br><br>
+					<div class="br-textarea large">
+					<label for="textarea-id1">No texto:</label><br><br>
+					<textarea name="noTexto" id="textarea-id1" cols="40" rows="4" maxlength="300" readonly="true">Citação Direta: (SCOTE, 2020, p. 0)
+
+Citação Indireta: Scote (2020, p. 0)
+					</textarea>
+						<div class="text-base">
+							<span class="current"></span>
+						</div>
+					</div>
+					<br>
+
+					<div class="br-textarea large">
+						<label for="textarea-id2">Nas referências:</label><br><br>
+						<textarea name="nasReferencias" id="textarea-id2" cols="39" rows="8" readonly="true">SCOTE, F. D.; GARCIA, M. R. V. Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior. In: PERSPECTIVA, REVISTA DO CENTRO DE CIÊNCIAS DA EDUCAÇÃO, Florianópolis, v. 38, n. 2 p. 01-25, abr./jun. 2020</textarea>
+						<div class="text-base">
+							<span class="current"></span>
+						</div>
+					</div>
+					</div>
+
+					<div class="coment">
+					<!--estrelas flexpsition: flex end row
+					txt.textarea
+					button-->
+					<div class="br-textarea large">
+						<label for="textarea-id3">Deixe seu cometário sobre esse texto:</label><br><br>
+						<textarea name="nasReferencias" id="textarea-id3" cols="91"rows="5" placeholder="Deixe um comentário..."></textarea>
+							<div class="text-base">
+								<span class="current"></span>
+								<span class="nota">
+									<p class="iconComent nota">Nota: </p>
+									<button type="submit" class="nota">Enviar</button>
+								</span>
+							</div>
+					</div>
+				</div>
+
+						<!-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
+
+				<!-- o titulo não vai mais ser um link-->
+			
+				<!-- colocar vairas caixinhas com os comentários e colocar do lado a nota de cada um... e as fotos de cada pessoa -->
+				<div class="comentarios">
+						<span class="comentarioTeste">
+							<div class="perfil"><img src="./male-54.jpg" width="10%" name="foto de perfil">Caio Prado 
+							</div>
+								<p class="iconComentario"> 4</p>
+							</span>
+							<p name="comentario" id="textareaComentario" cols="91" rows="5" readonly="true">Gostei muito do texto. Fala sobre o ingresso de pessoas trans no ensino superior com muia propriedade. O texto me rendeu várias citações pra minha dissertação de mestrado. É um texto de referência pra quem pesquisa o assunto.</p>
+						</div>
+
+						<div class="comentarios">
+						<span class="comentarioTeste">
+							<div class="perfil"><img src="./female-57.jpg" width="10%" name="foto de perfil">Mirela Valentina
+							</div>
+								<p class="iconComentario"> 3</p>
+							</span>
+							<p name="comentario" id="textareaComentario" cols="91" rows="5" readonly="true">Esse texto mudou minha vida! Super recomendo</p>
+						</div>
+				</section>
+
 				</aside>
-				<!-- incluir uma div com o campo: "como citar esse artigo" com a opção de botão pra pessoa copiar a citação -->
-				<!-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
 			</div>
 	</div>
 </body>

@@ -1,0 +1,322 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+:root {
+  --purple: #74487D;
+  --light-purple: #DE84F0;
+  --light-green: #B6F06C;
+  --texto: #333333;
+  --green: #95CB50;
+  
+}
+
+
+/* fazer aquele esquema de aproveitar o mesmo html (e ver se funciona com o CSS tbm)  */
+/* separar os arquivos CSS um pra cada página (apagar o que não é utilizado na página específica) 
+- fazer a página inicial com a barra de busca e a logo*/
+
+
+body {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin: 0;
+  border: 0;
+  left: 0px;
+  top: 0px;
+  background: var(--light-green);
+}
+
+header .titulos {
+  flex-direction: row;
+  padding: 0px;
+  margin: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+
+}
+
+header .titulos:hover {
+  opacity: 1;
+}
+
+main {
+  padding-left: 0px;
+  margin-left: 0px;
+  ;
+  border-left: 0px;
+}
+
+footer {
+  top: 567px;
+  background: var(--light-green);
+  padding: 16px 0px 16px 45%;
+}
+
+
+/* FILTRO --------------------------- */
+.filtro {
+  width: 287px;
+  height: 559px;
+  left: 16px;
+  margin: 0px;
+  background: var(--light-purple);
+  border-radius: 0px 100px 100px 0px;
+
+}
+
+.formFiltro input {
+  margin-top: 16px;
+  margin-left: 32px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+form .h3 {
+  padding-top: 16px;
+  margin-left: 32px;
+}
+
+/* fixar o filtro na tela */
+.conteudo .roxo {
+  /*position: relative;*/
+  /*position: absolute;*/
+  position: fixed;
+}
+
+/* BARRA DE BUSCA ------------------ */
+.buscar button {
+  /*position: absolute;*/
+  width: 120px;
+  height: 40px;
+  left: 725px;
+  top: 150px;
+  background: var(--light-purple);
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: bold;
+  /* fazer o botão "pesquisar"mudar de cor quando passa o mouse */
+  opacity: 0.9;
+}
+
+.buscar button:hover {
+  opacity: 1;
+}
+
+.barraDeBusca {
+  /*position: absolute;*/
+  /*width: 360px;*/
+  height: 40px;
+  left: 352px;
+  top: 150px;
+  font-size: 16px;
+  font-weight: thin;
+  padding-left: 16px;
+  /* colocar o texto mais pro lado */
+  background: #FFFFFF;
+  border: 2px solid var(--light-purple);
+  box-sizing: border-box;
+  border-radius: 24px;
+  opacity: 0.7;
+
+}
+
+.barraDeBusca:hover {
+  opacity: 1;
+}
+
+.citacao {
+  position: absolute;
+  width: 282px;
+  height: 372px;
+  top: 250px;
+  margin-left: 790px;
+  padding: 16px 0px 16px 16px;
+  border: 2px solid var(--texto);
+  background-color: var(--light-green);
+  color: var(--texto);
+  font-weight: bold;
+}
+
+#textarea-id1, 
+#textarea-id2 {
+  border: 1px solid var(--texto);
+  padding: 8px;
+}
+
+/* FILTRO E TEXTO (CONTEÚDO) -------- */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TEXTO CORRIDO (RESULTADO DAS BUSCAS)------- */
+.bloco {
+  text-align: justify;
+  margin: 32px 80px 32px 200px;
+  padding-right: 320px;
+  padding-left: 160px;
+}
+
+.busca {
+  margin: 60px 0px 0px 200px;
+  padding-left: 300px;
+}
+
+a {
+  margin-bottom: 4px;
+}
+
+p a {
+   color: blue;
+   opacity: 0.8;
+}
+
+p a:hover {
+  opacity: 1;
+}
+
+h3 a {
+  color: var(--purple);
+  opacity: 0.7;
+  /* essa desgraça não quer ficar em azul, é necessário para que o usuário saiba que esse texto pode ser clicável */
+  padding-left: 359px;
+}
+
+h3 a:hover {
+  opacity: 1;
+}
+
+
+/* adicionar um ícone estrela */
+
+.icon::before {
+  font-family: 'Material Icons';
+  /*content: "\e838";*/
+  content: "\f09a";
+  color: var(--green);
+  /* aumentar o tamanho da estrela */
+}
+
+.icon {
+  color: var(--green);
+}
+
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto.citacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* comentários ------------------------- */
+.iconComent::after {
+  font-family: 'Material Icons';
+  color: var(--texto);
+  /*content: "\e838";*/
+  content: "\f09a \f09a \f09a \f09a \f09a";
+  
+  
+}
+
+.coment {
+  /*padding-left: 344px;*/
+  margin: 16px;
+  font-size: 16px;
+  background-color: var(--light-green);
+  padding: 16px;
+  
+}
+
+#textarea-id3{
+   font-size: 16px;
+}
+
+.nota {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 6px;
+  align-items: center;
+
+}
+
+.nota button {
+  background-color: var(--light-purple);
+  color: var(--purple);
+  opacity: 0.8;
+  padding: 8px;
+  margin: 8px;
+  align-items: center;
+}
+ .nota button:hover {
+   opacity: 1;
+ }
+
+ /* comentários --------------------- */
+/* não consifo colocar as estrelinhas no lugar */
+.tituloComentario h3, p.icon {
+   
+}
+
+div.br-textarea.large {
+ 
+}
+
+div.teste {
+
+}
+
+.iconComentario {
+  color: var(--green);
+}
+.iconComentario:before{
+   font-family: 'Material Icons';
+   content: "\f09a";
+   color: var(--green);
+
+}
+
+.comentarioTeste {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 550px;
+  font-size: 16px;
+  margin: 16px 0px 8px 16px;
+  font-weight: bold;
+  padding: 16px 0px 0px 0px;
+
+}
+
+.perfil img {
+  margin-right: 10px;
+
+
+}
+
+#textareaComentario {
+  padding: 8px;
+  margin: 8px;
+}

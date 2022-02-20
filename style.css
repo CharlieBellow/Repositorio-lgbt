@@ -17,7 +17,7 @@
 /* fazer aquele esquema de aproveitar o mesmo html (e ver se funciona com o CSS tbm)  */
 /* separar os arquivos CSS um pra cada página (apagar o que não é utilizado na página específica) */
 
-/* na ágina texto:
+/* na página texto:
 	< !-- incluir uma div com o campo: "como citar esse artigo"com a opção de botão pra pessoa copiar a citação -->< !-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
 */
 
@@ -33,7 +33,6 @@ header {
   margin: 0;
   border: 0;
   left: 0px;
-  right: 0px;
   top: 0px;
   background: var(--green);
 }
@@ -53,17 +52,12 @@ header .titulos:hover {
 }
 
 main {
-  /*align-items: center;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
   padding-left: 0px;
   margin-left: 0px;;
   border-left: 0px;
 }
 
 footer {
-  width: 1336px;
-  height: 54px;
   top: 567px;
   background: var(--green);
   padding: 16px 0px 16px 45%;
@@ -154,11 +148,6 @@ margin-left: 32px;
 
 /* TEXTO CORRIDO (RESULTADO DAS BUSCAS)------- */
 .bloco {
-  /*position: absolute;*/
-  /*width: 470px;*/
-  /*height: 650px;*/
-  /*left: 475px;*/
-  /*top: 200px;*/
   text-align: justify;
   margin: 32px 80px 32px 200px;
   padding-right: 170px;
@@ -168,14 +157,8 @@ margin-left: 32px;
   margin: 60px 0px 0px 200px;
 }
 
-/*aside {
-  margin-bottom: 8px;
-}*/
-
-/* fazer o estilo os links dos textos-------------- */
-
 a {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 h3 a{
@@ -210,102 +193,3 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-
-
-/* mudar a cor do botão quando o mouse passa em cima */
-
-
-/* LIXO: ---------------------- */
-
-/*body {
-
-  display: grid;
-  grid-template-areas: 
-  "header header "
-  "main main"
-  "section aside"
-  "footer footer";
-
-  grid-template-rows: 30px 1fr 40px;
-  grid-template-columns: 1fr 750px;
-
-}*/
-
-/*h1 {
-  color: black;
-  text-align: center;
-}*/
-
-/*.bloco div {
-  /*margin-left: 30px;*/
-  /*margin-left: 0px;
-  margin-right: 10px;*/
-  
-  /*padding-left: 400px;*/
-  /*padding-left: 30px;
-
-}*/
-
-/*.busca {
-  font-size: 20px;
-  align: center;
-}*/
-
-/*button {
-  align: center;
-}
-*/
-
-/*header {
-  /*grid-area: header;
-}*/
-
-/*title {
- /* grid-area: title;*/
-/*  margin-left: 500px;
-  margin-top: 100px;
-}*/
-
-/*main {
-  /*grid-area: main;*/
-  /*margin-left: 500px;*/
-  /*padding-top: 10px;
-
-}*/
-
-/*section {
-  /*margin-left: 20px;
-  margin-right: 10px;
-  position: absolute;*/
-  /*grid-area: section;*/
-  /*width: 970px;
-}*/
-
-/*aside {
-  grid-area: aside;
-}*/
-
-/*.formFiltro {
-  /*position:absolute;*/
-  /*left: 16px;*/
-  /*top: 50px;*/
-  /* aumentar o espaço entre os nomes e estilizar a bolinha de checar 
-
-}*/
-
-/*section .caixas .roxo .filtro form .texto {
-  display: flex;
-  position: absolute;
-  justify-content: space-around;
-}*/
-
-/*.texto {
-  position: absolute;*/
-  /*width: 470px;
-}*/
-
-/*.bloco div {
-  /*margin-right: 35px;*/
-  /*text-align: justify;*/
-  /*width: 70%;
-}*/
