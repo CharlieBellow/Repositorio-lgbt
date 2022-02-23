@@ -3,18 +3,21 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: #333333;
+  color: var(--texto);
   text-decoration: none;
 }
 
 :root {
   --purple: #74487D;
   --light-purple: #DE84F0;
-  --green: #B6F06C;
-}
+  --light-green: #B6F06C;
+  --texto: #333333;
+  --green: #95CB50;
+  }
 
 body {
   background-color: white;
+  min-height: 100vh;
 }
 
 
@@ -51,7 +54,7 @@ body {
   padding-left: 16px;
   /* colocar o texto mais pro lado */
   background: #FFFFFF;
-  border: 1px solid var(--light-purple);
+  border: 1.5px solid var(--light-purple);
   box-sizing: border-box;
   border-radius: 24px;
   opacity: 0.7;
@@ -66,11 +69,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:100px;
-  padding-top:16px;
+  margin-top: 30px;
+  /*padding-top: 0px;*/
 
 }
 
 img {
-  padding-bottom: 32px;;
+  padding-bottom: 4px;
+  /*margin-top: 16px;*/
 }

@@ -3,14 +3,18 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: #333333;
+  color: var(--texto);
   text-decoration: none; 
+  box-sizing: border-box;
+  
 }
 
 :root {
   --purple: #74487D;
   --light-purple: #DE84F0;
-  --green: #B6F06C;
+  --light-green: #B6F06C;
+  --texto: #333333;
+  --green: #95CB50;
 }
 
 /* incluir os comentários na página texto e separar os arquivos css */
@@ -23,18 +27,19 @@
 
 body {
   background-color: white;
+  min-height: 100vh;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 4px;
   margin: 0;
   border: 0;
   left: 0px;
   top: 0px;
-  background: var(--green);
+  background: var(--light-green);
 }
 
 header .titulos {
@@ -59,31 +64,30 @@ main {
 
 footer {
   top: 567px;
-  background: var(--green);
-  padding: 16px 0px 16px 45%;
+  background: var(--light-green);
+  padding: 10px 0px 16px 45%;
 }
 
 
 /* FILTRO --------------------------- */
 .filtro {
   width: 287px;
-  height: 559px;
+  height: 500px;
   left: 16px;
   margin: 0px;
   background: var(--light-purple);
   border-radius: 0px 100px 100px 0px;
-  
 }
 
 .formFiltro input{
-margin-top: 16px;
-margin-left: 32px;
-padding-left: 10px;
-margin-right: 10px;
+  margin-top: 16px;
+  margin-left: 32px;
+  padding-left: 10px;
+  margin-right: 10px;
 }
 
 form .h3 {
-padding-top: 16px;
+padding-top: 8px;
 margin-left: 32px;
 }
 
@@ -177,14 +181,14 @@ h3 a:hover{
 
 .icon::before {
   font-family: 'Material Icons';
-  content: "\e838";
+  /*content: "\e838";*/
   content: "\f09a";
-  color: #95CB50;
+  color: var(--green);
   /* aumentar o tamanho da estrela */
 }
 
 .icon {
-  color: #95CB50;
+  color: var(--green);
 }
 
 h3 {

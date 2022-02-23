@@ -24,13 +24,14 @@
 
 body {
   background-color: white;
+  min-height: 100vh;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 4px;
   margin: 0;
   border: 0;
   left: 0px;
@@ -55,21 +56,20 @@ header .titulos:hover {
 main {
   padding-left: 0px;
   margin-left: 0px;
-  ;
   border-left: 0px;
 }
 
 footer {
   top: 567px;
   background: var(--light-green);
-  padding: 16px 0px 16px 45%;
+  padding: 10px 0px 16px 45%;
 }
 
 
 /* FILTRO --------------------------- */
 .filtro {
   width: 287px;
-  height: 559px;
+  height: 500px;
   left: 16px;
   margin: 0px;
   background: var(--light-purple);
@@ -85,7 +85,7 @@ footer {
 }
 
 form .h3 {
-  padding-top: 16px;
+  padding-top: 8px;
   margin-left: 32px;
 }
 
@@ -144,7 +144,7 @@ form .h3 {
   width: 282px;
   height: 372px;
   top: 250px;
-  margin-left: 790px;
+  margin-left: 650px;
   padding: 16px 0px 16px 16px;
   border: 2px solid var(--texto);
   background-color: var(--light-green);
@@ -245,11 +245,15 @@ h3 {
   font-size: 16px;
   background-color: var(--light-green);
   padding: 16px;
+
   
 }
 
 #textarea-id3{
    font-size: 16px;
+   padding: 16px;
+   width: 495px;
+   height: 90px;
 }
 
 .nota {
@@ -273,19 +277,6 @@ h3 {
    opacity: 1;
  }
 
- /* comentários --------------------- */
-/* não consifo colocar as estrelinhas no lugar */
-.tituloComentario h3, p.icon {
-   
-}
-
-div.br-textarea.large {
- 
-}
-
-div.teste {
-
-}
 
 .iconComentario {
   color: var(--green);
@@ -312,11 +303,25 @@ div.teste {
 
 .perfil img {
   margin-right: 10px;
-
-
 }
 
 #textareaComentario {
   padding: 8px;
   margin: 8px;
+}
+
+/* coloquei o nome dos perfis acima */
+div.perfil {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* fazendo o nome da pessoa ser clicável */
+div.perfil p {
+  opacity: 0.8;
+}
+
+
+div.perfil p:hover {
+  opacity: 1;
 }
