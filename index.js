@@ -1,0 +1,383 @@
+//import { createRequire } from "module";
+//const require = createRequire(import.meta.url);
+
+//import { Autor } from "./Autor.js";
+//autor = require("./Autor");
+//import { Texto } from "./Texto.js";
+//texto = require("./Texto");
+
+//import { tentativaDaFuncao } from "./tentativaDaFuncao";
+//tentativaDaFuncao = require("./tentativaDaFuncao.js")
+	
+/* Autor ------------------------------------------------------------------------------------ */
+
+/*export */class Autor {
+	constructor(nome, sobrenome, formacao, publicacoes) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.formacao = formacao;
+		this.publicacoes = publicacoes;
+	}
+}
+
+
+/* Texto ----------------------------------------------------------------------------------- */
+
+/*export */class Texto {
+	constructor(
+		titulo,
+		autor,
+		ano,
+		tipo,
+		categoria,
+		link,
+		citacao,
+		avaliacao,
+		descricao
+	) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.ano = ano;
+		this.tipo = tipo;
+		this.categoria = categoria;
+		this.link = link;
+		this.citacao = citacao;
+		this.avaliacao = avaliacao;
+		this.descricao = descricao;
+	}
+
+	citarIndireta() {
+		// Scote (2020, p. 0)
+		// receber o sobrenome do autor
+		return `${this.autor} (${this.ano}, p. 0)`;
+	}
+
+	citarDireta() {
+		// (SCOTE, 2020, p. 0)
+
+		return `(${this.autor.toUpperCase()}, ${this.ano}, p. 0)`;
+	}
+}
+
+
+/* Index ------------------------------------------------------------------------------------------------ */
+const scote = new Autor("Fausto", "Scote", "Ciências Sociais");
+const ceccarelli = new Autor("Paulo", "Ceccarelli", "Psicanalista");
+const moira = new Autor("Amara", "Moira", "filosofa");
+const jesus = new Autor("Jaqueline", "Jesus", "filosofa");
+const vergueiro = new Autor("Viviane", "Vergueiro", "filosofa");
+const vieira = new Autor("Helena", "Vieira", "filosofa");
+
+const textoTransformandoAUniversidade = new Texto(
+	"Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior",
+	scote,
+	2020,
+	"artigo",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"esse é um texto que fala sobre as pessoas trans na universidade. esse é um texto que fala sobre as pessoas trans na universidade.esse é um texto que fala sobre as pessoas trans na universidade "
+);
+
+const textoSeraQueTemosDireito = new Texto(
+	"SERÁ QUE TEMOS MESMO O DIREITO A UNIVERSIDADE ? O DESAFIO DO ACESSO E PERMANÊNCIA DE PESSOAS TRANSEXUAIS NO ENSINO SUPERIOR",
+	scote,
+	2012,
+	"artigo",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"esse texto fala sobre o acesso e a permanência de pessoas trans na universidade.esse texto fala sobre o acesso e a permanência de pessoas trans na universidadeesse texto fala sobre o acesso e a permanência de pessoas trans na universidade"
+);
+
+const textoUmEstudoEtnografico = new Texto(
+	"Um estudo Etnográfico da Prostituição Masculina e locais fechados",
+	scote,
+	2021,
+	"dissertação",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"esse texto fala da Prostituição masculina e seus desafios. esse texto fala da Prostituição masculina e seus desafios"
+);
+
+const textoAInvencaoDaHomossexualidade = new Texto(
+	"A invenção da Homossexualidade",
+	ceccarelli,
+	2015,
+	"artigo",
+	"homossexuais",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"nesse texto Ceccarelli discorre sobre a história da homossexualidade. nesse texto Ceccarelli discorre sobre a história da homossexualidade.nesse texto Ceccarelli discorre sobre a história da homossexualidade."
+);
+
+const textoUmProblemaDeGenero = new Texto(
+	"Um problema de gênero",
+	"butler",
+	2021,
+	"livro",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"um texto clássico de judith Butler. um texto clássico de judith Butler.um texto clássico de judith Butler.um texto clássico de judith Butler.um texto clássico de judith Butler.um texto clássico de judith Butler."
+);
+
+const textoAExperienciaDaCidade = new Texto(
+	"A experiencia da cidade para pessoas LGBTQIA",
+	moira,
+	2000,
+	"materia",
+	"LGBTQIA+",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"esse texto fala sobre a experiência da cidade para pessoas trans. esse texto fala sobre a experiência da cidade para pessoas trans"
+);
+
+const textoAProstituicaoComo = new Texto(
+	"A prostituição como trincheira trans",
+	moira,
+	2001,
+	"materia",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"discorrendo sobre as dificuldades enfrentadas pelas pessoas trans, a autora destaca a prostituição como alternativa..."
+);
+
+const textoAutobiografiasTrans = new Texto(
+	"Autobiografias trans",
+	moira,
+	2001,
+	"materia",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"esse texto trans várias referências sobre pessoas trans, a exemplo de João Nery"
+);
+
+const textoTransSexualidade = new Texto(
+	"Trans Sexualidade",
+	vergueiro,
+	2015,
+	"artigo",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"tudo que você precisa saber sobre transexualidade. tudo que você precisa saber sobre transexualidade. tudo que você precisa saber sobre transexualidade"
+);
+
+const textoTransfeminismo = new Texto(
+	"Transfeminismo",
+	vieira,
+	2014,
+	"artigo",
+	"trans",
+	"qualqer coisa",
+	"qualqer coisa",
+	"qualqer coisa",
+	"transfeminismo, um tema necessário dentro dos estudos de gênero. transfeminismo, um tema necessário dentro dos estudos de gênero. transfeminismo, um tema necessário dentro dos estudos de gênero"
+);
+
+
+let textDataBase = [];
+// adicionando os textos criados dentro do array
+textDataBase.push(
+	textoTransformandoAUniversidade,
+	textoSeraQueTemosDireito,
+	textoUmEstudoEtnografico,
+	textoAInvencaoDaHomossexualidade,
+	textoUmProblemaDeGenero,
+	textoAExperienciaDaCidade,
+	textoAProstituicaoComo,
+	textoAutobiografiasTrans,
+	textoTransSexualidade,
+	textoTransfeminismo
+);
+
+
+/* TentativaDaFuncao ------------------------------------------------------------------------------------------- */
+
+
+function searchByTitle(a, searchTerm) {
+	let newArray = [];
+	for (let i = 0; i < a.length; i++) {
+		if (a[i].titulo.toLowerCase().includes(searchTerm.toLowerCase())) {
+			newArray.push(a[i]);
+		}
+	}
+	return newArray;
+}
+
+let resultado = searchByTitle(textDataBase, "trans");
+//console.log(searchByTitle(resultado, "trans "));
+
+
+// barra de busca: --------------------------------------------
+//tentar fazer em inglês
+
+
+// fazer a lista aparecer na tela com o array textdatabase
+
+// pra criar os elementos
+//document.createElement("div");
+
+// posso fazer uma função que percorrer o array textdataBase e vai adicionando os títulos lá no html. aí eu comento o que já tem e crio de novo.
+// coloca a div, a tag h3, a tag a href, e o p pra descrição
+// ou adicionar manualmente..
+
+
+
+//
+//var title = document.querySelector("a.title");
+//var description = document.querySelector("p.description");
+//
+//
+//title.innerHTML = textDataBase[0].titulo;
+//
+//description.textContent = textDataBase[0].descricao;
+
+/*<aside class="bloco"></aside>
+	<div>
+							<h3><a class="title" href="./texto/texto.html">Esse é um exemplo de título</a> <p class="icon"> 4.5</p></h3>
+					
+							<p class="description">
+							Esse é um exemplo de texto que resume os assuntos do texto que está sendo apresentado. É um resumo personalizado do autor.
+							</p> <br> <br>
+						</div>
+*/
+
+
+//const texto2 = document.querySelector("aside.bloco div:nth-child(2) a");
+//
+//texto2.innerHTML = textDataBase[1].titulo.toLowerCase();
+//
+//
+//const descricao = document.querySelector("aside.bloco div:nth-child(2) .description");
+//
+//descricao.textContent = textDataBase[1].descricao
+//
+//console.log(descricao);
+
+// FUNÇÃO CERTA sem o IF
+/*function showText(array) {
+	for (index = 1; index < array.length; index++) {
+		let title = document.querySelector(`aside.bloco div:nth-child(${index}) a`);
+		let description = document.querySelector(
+			`aside.bloco div:nth-child(${index}) p.description`
+		);
+		title.innerHTML = array[index-1].titulo.toLowerCase();
+		description.textContent = array[index-1].descricao;
+	}
+	
+}
+
+showText(textDataBase);*/
+
+/*function criateHTML(){
+	const html = `<div>
+							<h3><a class="title" href="./texto/texto.html">Esse é um exemplo de título</a> <p class="icon"> 4.5</p></h3>
+
+							<p class="description">
+							Esse é um exemplo de texto que resume os assuntos do texto que está sendo apresentado. É um resumo personalizado do autor.
+							</p> <br> <br>
+						</div>`;
+
+const aside = document.querySelector("aside");
+const criaElemento = document.createElement("div")
+criaElemento.textContent = html
+	const cria = aside.appendChild(criaElemento)
+	
+}*/
+
+// FUNÇÃO COM O IF
+function showText(array) {
+	for (index = 0; index < array.length; index++) {
+	/*	if (document.querySelector(`aside.bloco div:nth-child(${index}) a`) !== null) {
+			var title = document.querySelector(`aside.bloco div:nth-child(${index}) a`);
+			var description = document.querySelector(`aside.bloco div:nth-child(${index}) p.description`);
+
+			title.innerHTML = array[index-1].titulo.toLowerCase();
+			description.textContent = array[index - 1].descricao;
+
+		} else {*/
+		
+		let text = array[index];
+		
+		const html = `
+			<h3><a class="title" href="./texto/texto.html">${text.titulo}</a> <p class="icon">4.5</p></h3>
+			<p class="description">${text.descricao}</p> <br> <br>
+		`;
+	
+		const aside = document.querySelector("aside.bloco");
+		
+		const textDiv = document.createElement('div');
+
+		textDiv.innerHTML = html;
+
+		aside.appendChild(textDiv);
+		 
+	}
+}
+showText(textDataBase);
+
+
+// filtrar os textos no campo de busca
+
+// usar  a função searchByTitle;
+// declarar mais uma variável pra guardar os textos filtrados
+
+// ao clicar enter rodar a função searchByTitle
+
+// atualizar a tela quando der enter e chamar a função que adiciona os títulos filtrados.
+
+
+
+
+//2ª parte
+// criar uma nova versão do site com React.
+
+
+
+//console.log(cria);
+/*function createHTML() {
+	let title = document.querySelector("a.title");
+	let description = document.querySelector("p.description");
+		
+			const html = `
+				<div>
+				<h3><a class="title" href="./texto/texto.html">${title}</a> <p class="icon"> 4.5</p></h3>
+				<p class="description">
+								${description}
+								</p> <br> <br>
+							</div>
+			`;
+
+
+	return html;
+}
+
+
+
+function showText(array) {
+	for (let index = 0; index < array.length; index++) {
+		const div = document.createElement("div");
+		div.innerHTML = createHTML();
+		createHTML.title.innerHTML = array[index].titulo;
+		createHTML.description.textContent = array[index].descricao;
+	}
+}
+
+showText(textDataBase);*/
+
+
+//module.exports = index;

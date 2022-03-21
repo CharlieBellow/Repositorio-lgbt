@@ -78,3 +78,42 @@ img {
   padding-bottom: 4px;
   /*margin-top: 16px;*/
 }
+
+
+/* no leiaute atual de desktop, tenho que mudar as unidades de medidas de pixel para rem ou em pra que tudo se adapte a tela maiores 
+
+- talvez seja melhor usar o grid em alguns momentos
+
+*/
+
+@media screen and (max-width: 480px) {
+
+  /* celular */
+  /* 
+  - colocar o float bottom fixo na tela para o filtro e colocar a opção da pessoa abir e fechar e sse filtro (ele vai abrir e fechar com um botão, mas o efeito vai ser ele fazendo um swipe pra direita e para esquerda.) 
+  - pra deixar esse float bottom, é necessário dar um espaço nas bordas pra o conteúdo não ficar em cima.
+
+  - tem que diminuir o tamanho da barra de pesquisa
+
+
+
+
+  */
+
+}
+
+@media screen and (max-width: 768px) {
+  /*tablet*/
+  /*
+  corrigir o menu
+
+  ajeitar o padding das laterais
+
+  
+  
+  */
+}
+
+@media screen and (max-width: 1024px) {
+  /* desktops antigos */
+}

@@ -153,8 +153,9 @@ margin-left: 32px;
 /* TEXTO CORRIDO (RESULTADO DAS BUSCAS)------- */
 .bloco {
   text-align: justify;
-  margin: 32px 80px 32px 200px;
-  padding-right: 170px;
+  margin:  2rem 7rem;
+  min-width: 10rem; 
+  /*padding-right: 170px;*/
 }
 
 .busca {
@@ -168,6 +169,7 @@ a {
 h3 a{
  color: var(--purple);
  opacity: 0.7;
+ max-width: 90%;
  /* essa desgraça não quer ficar em azul, é necessário para que o usuário saiba que esse texto pode ser clicável */
   
 }
@@ -189,6 +191,7 @@ h3 a:hover{
 
 .icon {
   color: var(--green);
+  /*display: row;*/
 }
 
 h3 {
