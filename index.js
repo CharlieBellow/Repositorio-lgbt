@@ -225,7 +225,6 @@ let resultado = searchByTitle(textDataBase, "trans");
 // barra de busca: --------------------------------------------
 //tentar fazer em inglês
 
-
 // fazer a lista aparecer na tela com o array textdatabase
 
 // pra criar os elementos
@@ -235,149 +234,75 @@ let resultado = searchByTitle(textDataBase, "trans");
 // coloca a div, a tag h3, a tag a href, e o p pra descrição
 // ou adicionar manualmente..
 
-
-
-//
-//var title = document.querySelector("a.title");
-//var description = document.querySelector("p.description");
-//
-//
-//title.innerHTML = textDataBase[0].titulo;
-//
-//description.textContent = textDataBase[0].descricao;
-
-/*<aside class="bloco"></aside>
-	<div>
-							<h3><a class="title" href="./texto/texto.html">Esse é um exemplo de título</a> <p class="icon"> 4.5</p></h3>
-					
-							<p class="description">
-							Esse é um exemplo de texto que resume os assuntos do texto que está sendo apresentado. É um resumo personalizado do autor.
-							</p> <br> <br>
-						</div>
-*/
-
-
-//const texto2 = document.querySelector("aside.bloco div:nth-child(2) a");
-//
-//texto2.innerHTML = textDataBase[1].titulo.toLowerCase();
-//
-//
-//const descricao = document.querySelector("aside.bloco div:nth-child(2) .description");
-//
-//descricao.textContent = textDataBase[1].descricao
-//
-//console.log(descricao);
-
-// FUNÇÃO CERTA sem o IF
-/*function showText(array) {
-	for (index = 1; index < array.length; index++) {
-		let title = document.querySelector(`aside.bloco div:nth-child(${index}) a`);
-		let description = document.querySelector(
-			`aside.bloco div:nth-child(${index}) p.description`
-		);
-		title.innerHTML = array[index-1].titulo.toLowerCase();
-		description.textContent = array[index-1].descricao;
-	}
-	
-}
-
-showText(textDataBase);*/
-
-/*function criateHTML(){
-	const html = `<div>
-							<h3><a class="title" href="./texto/texto.html">Esse é um exemplo de título</a> <p class="icon"> 4.5</p></h3>
-
-							<p class="description">
-							Esse é um exemplo de texto que resume os assuntos do texto que está sendo apresentado. É um resumo personalizado do autor.
-							</p> <br> <br>
-						</div>`;
-
-const aside = document.querySelector("aside");
-const criaElemento = document.createElement("div")
-criaElemento.textContent = html
-	const cria = aside.appendChild(criaElemento)
-	
-}*/
-
-// FUNÇÃO COM O IF
 function showText(array) {
-	for (index = 0; index < array.length; index++) {
-	/*	if (document.querySelector(`aside.bloco div:nth-child(${index}) a`) !== null) {
-			var title = document.querySelector(`aside.bloco div:nth-child(${index}) a`);
-			var description = document.querySelector(`aside.bloco div:nth-child(${index}) p.description`);
+	// tentativa de verificar se existe div dentro do aside, se tiver ele apaga enquanto existir. se não tiver ele executa o código da função que mostra o texto
 
-			title.innerHTML = array[index-1].titulo.toLowerCase();
-			description.textContent = array[index - 1].descricao;
+	// atualizar a tela quando pesquisar e chamar a função que adiciona os títulos filtrados.
+	if (document.querySelector("aside.bloco").querySelector("div")) {
+		while (document.querySelector("aside.bloco").querySelector("div")) {
+			document
+				.querySelector("aside.bloco")
+				.removeChild(
+					document.querySelector("aside.bloco").querySelector("div")
+				);
+		}
+	}
 
-		} else {*/
-		
+	for (let index = 0; index < array.length; index++) {
 		let text = array[index];
-		
+
 		const html = `
 			<h3><a class="title" href="./texto/texto.html">${text.titulo}</a> <p class="icon">4.5</p></h3>
 			<p class="description">${text.descricao}</p> <br> <br>
 		`;
-	
+
 		const aside = document.querySelector("aside.bloco");
-		
-		const textDiv = document.createElement('div');
+
+		const textDiv = document.createElement("div");
 
 		textDiv.innerHTML = html;
 
 		aside.appendChild(textDiv);
-		 
 	}
 }
+
 showText(textDataBase);
 
 
 // filtrar os textos no campo de busca
 
 // usar  a função searchByTitle;
-// declarar mais uma variável pra guardar os textos filtrados
 
-// ao clicar enter rodar a função searchByTitle
-
-// atualizar a tela quando der enter e chamar a função que adiciona os títulos filtrados.
+// pegar a barra de busca 
 
 
+
+	var $ = document.querySelector.bind(document);
+
+const searchButton = $('button.button'); // botão
+
+// ao clicar enter rodar a função searchByTitle (opcional por enquanto)
+searchButton.addEventListener("click", function (e) {
+	e.preventDefault(); // para não enviar o formulário
+
+	//console.log("funcionou");
+	// declarar mais uma variável pra guardar os textos filtrados
+	var inputSearch = $("input.barraDeBusca").value; // input de busca (esse é o meu termo buscado)
+	console.log(inputSearch);
+
+	const resultOfSearch = searchByTitle(textDataBase, inputSearch);
+	//console.log(resultOfSearch);
+	//console.log(showText(resultOfSearch))
+	showText(resultOfSearch);
+	console.log(showText(resultOfSearch));
+
+	/*	setTimeout(function () {
+		window.location.reload(1);
+	}, 10000);*/
+});
 
 
 //2ª parte
 // criar uma nova versão do site com React.
-
-
-
-//console.log(cria);
-/*function createHTML() {
-	let title = document.querySelector("a.title");
-	let description = document.querySelector("p.description");
-		
-			const html = `
-				<div>
-				<h3><a class="title" href="./texto/texto.html">${title}</a> <p class="icon"> 4.5</p></h3>
-				<p class="description">
-								${description}
-								</p> <br> <br>
-							</div>
-			`;
-
-
-	return html;
-}
-
-
-
-function showText(array) {
-	for (let index = 0; index < array.length; index++) {
-		const div = document.createElement("div");
-		div.innerHTML = createHTML();
-		createHTML.title.innerHTML = array[index].titulo;
-		createHTML.description.textContent = array[index].descricao;
-	}
-}
-
-showText(textDataBase);*/
-
 
 //module.exports = index;
