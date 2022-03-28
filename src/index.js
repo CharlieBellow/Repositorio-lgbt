@@ -1,9 +1,9 @@
 //import { createRequire } from "module";
 //const require = createRequire(import.meta.url);
 
-//import { Autor } from "./Autor.js";
+import { Autor } from "./Autor.js";
 //autor = require("./Autor");
-//import { Texto } from "./Texto.js";
+import { Texto } from "./Texto";
 //texto = require("./Texto");
 
 //import { tentativaDaFuncao } from "./tentativaDaFuncao";
@@ -11,19 +11,19 @@
 	
 /* Autor ------------------------------------------------------------------------------------ */
 
-/*export */class Autor {
+/*export *//*class Autor {
 	constructor(nome, sobrenome, formacao, publicacoes) {
 		this.nome = nome;
 		this.sobrenome = sobrenome;
 		this.formacao = formacao;
 		this.publicacoes = publicacoes;
 	}
-}
+}*/
 
 
 /* Texto ----------------------------------------------------------------------------------- */
 
-/*export */class Texto {
+/*export *//*class Texto {
 	constructor(
 		titulo,
 		autor,
@@ -57,7 +57,7 @@
 
 		return `(${this.autor.toUpperCase()}, ${this.ano}, p. 0)`;
 	}
-}
+}*/
 
 
 /* Index ------------------------------------------------------------------------------------------------ */
@@ -306,3 +306,10 @@ searchButton.addEventListener("click", function (e) {
 // criar uma nova versão do site com React.
 
 //module.exports = index;
+
+
+// pensar no filtro (filtrar por categoria e descrição)
+// na busca pela descrição
+// aprimorar o HTML e CSS
+// fazer a pagina index se conectar com a página repos.html
+// quando fizer a busca colocar o termo buscado com uma query na URL
