@@ -3,7 +3,7 @@
 
 import { Autor } from "./Autor.js";
 //autor = require("./Autor");
-import { Texto } from "./Texto";
+import { Texto } from "./Texto.js";
 //texto = require("./Texto");
 
 //import { tentativaDaFuncao } from "./tentativaDaFuncao";
