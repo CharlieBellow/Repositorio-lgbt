@@ -48,4 +48,4 @@ searchButton.addEventListener("click", function (e) {
 // fazer a pagina index se conectar com a página search.html
 
 
-// organizar os arquivos em cada .js - ok
+// - ok - organizar os arquivos em cada .js 

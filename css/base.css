@@ -1,5 +1,4 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--texto);
   margin: 0;
   padding: 0;
@@ -26,45 +25,17 @@
 
 body {
   background-color: white;
-  /*min-height: 100vh;*/
+  font-family: 'Open-sans', sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px;
-  margin: 0;
-  border: 0;
-  left: 0px;
-  top: 0px;
-  background: var(--light-green);
-}
-
-header .titles {
-  flex-direction: row;
-  padding: 0px;
-  margin: 0 8px;
-  display: flex;
-  justify-content: space-between;
-  opacity: 0.8;
-
-}
-
-header .titles:hover {
-  opacity: 1;
-}
-
-main {
-  padding-left: 0px;
-  margin-left: 0px;;
-  border-left: 0px;
-}
 
 /* FILTRO E TEXTO (CONTEÚDO) -------- */
-.content {
-  display: flex;
-  flex-direction: row;
+.search {
+/* display: flex;
+  flex-direction: row;*/
+  padding-right: 6%;
+  padding-left: 6%;
+  /*text-align: center;*/
 }
 
 /* FILTRO --------------------------- */
@@ -229,28 +200,15 @@ footer {
 
 }
 
-@media screen and (max-width: 1199px) {
-  
-  div .search{
-    margin: 10%;
 
-  }
 
-  .search__searchBar {
-    /* position: absolute; */
-    margin-bottom: 10px;
-    max-width: 32.5em;
-  }
-
-  .block {
-  text-align: justify;
-  margin: 0;
-  }
-
-  /* desenhar o float button */
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+        /* aqui eu mantenho todo o conteúdo da tela m 940 px - pra cumpri o grid que eu aprendi nas aulas de figma */
+    }
 }
-
-
 /* 
 resolver o CSS:
 

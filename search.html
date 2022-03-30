@@ -5,89 +5,80 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Repositório LGBT</title>
-	<!-- o reset tá interferindo aqui -->
-	<!--<link rel="stylesheet" href="./css/reset.css">-->
-	
+	<!--<link rel="stylesheet" href="./css/style.css">-->
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/reset.css">
+
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/partes/header.css">
+
+	<link rel="stylesheet" href="./css/partes/heder.css">
 	
-	<link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
+
 </head>
 <body>
-	<nav class="boxes">
-		<div class="header">
-			<header class="header__menu">
-				<div>
-					<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" height="10%" width="5%">
-				</div>
-				<div class="titles">
-				<div class="titles">Contato</div>
-				<div class="titles">Home</div>
-				<div class="titles"><a href="./sobre/sobre.html">Sobre</a></div>
-				<div class="titles">Contribua</div>
-				<div class="titles">Ajuda</div>
-				</div>
-				
-			</header>
-		</div>
-			<main>
-					<!--<h1 style="text-align: center;">Repositório LGBT</h1>-->
-			</main>
-		<div class="content">
-			<div class="filter__ret--purple">
-				<section class="filter__section">
-					<form method="post" action="#" class="filter__form">
-							<!--<fieldset>-->
-							<!--<legend>FILTRO:</legend>-->
-							<!-- para cada categoria criada, vai ser criada mais um input -->
-							<h3 class="h3">Filtro:</h3>
-							<input type="checkbox" name="lésbica" value="sim">lésbica<br>
-							<input type="checkbox" name="gay" value="sim">gay<br>
-							<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
-							<input type="checkbox" name="travestis" value="sim">travestis<br>
-							<input type="checkbox" name="transexuais" value="sim">transexuais<br>
-							<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
-							<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
-							<input type="checkbox" name="artigos" value="sim">artigos<br>
-							<input type="checkbox" name="dissertações" value="sim">dissertações<br>
-							<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
-							<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
-							<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
-							<input type="checkbox" name="diversidade" value="sim">diversidade <br>
-							<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
-							<!--</fieldset>-->
-					</form>
-				</section>
+	<header class="header">
+		<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="header__logo">
+		<nav class="header__nav">
+			<ul> 
+				<li class="header__links">Home</li>
+				<li class="header__links">Contato</li>
+				<li class="header__links"><a href="./sobre/sobre.html">Sobre</a></li>
+				<li class="header__links">Contribua</li>
+				<li class="header__links">Ajuda</li>
+			</ul>
+		</nav>
+	</header>
+	
+		<section class="filter__section">
+			<div class="filter__ret--purple content ">
+				<form method="post" action="#" class="filter__form">
+					<h3 class="h3">Filtro:</h3>
+					<input type="checkbox" name="lésbica" value="sim">lésbica<br>
+					<input type="checkbox" name="gay" value="sim">gay<br>
+					<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
+					<input type="checkbox" name="travestis" value="sim">travestis<br>
+					<input type="checkbox" name="transexuais" value="sim">transexuais<br>
+					<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
+					<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
+					<input type="checkbox" name="artigos" value="sim">artigos<br>
+					<input type="checkbox" name="dissertações" value="sim">dissertações<br>
+					<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
+					<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
+					<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
+					<input type="checkbox" name="diversidade" value="sim">diversidade <br>
+					<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
+				</form>
 			</div>
-			<div class="search">
-				<div class="search__text">
-						<form name="form" class="search__toLookFor" method="post" action="#">
-							<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="search__searchBar">
-							<input type="submit" class="search__button" value="Pesquisar"><br>
-							<br>
-						</form>
-				</div>
-				<aside class="block">
+	</section>
+	<main>
+	<section class="search content">
+		<div class="search__text">
+			<form name="form" class="search__toLookFor" method="post" action="#">
+				<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="search__searchBar">
+				<input type="submit" class="search__button" value="Pesquisar"><br>
+				<br>
+			</form>
+		</div>
+		<aside class="block content">
 
 					<!--fazer os links dos textos-->
 					<!-- para acada texto adicionado será criada uma div com o link pra essa página -->
 
 
-				</aside>
-				<p>tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse 
-					<a href="mailto:charliebftm@gmail.com">Email</a> 
-				</p>
-			</div>
-	</div>
+		</aside>
+		<p>tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse <a href="mailto:charliebftm@gmail.com">Email</a></p>
+	</section>
 	<!--<script  src="./tentativaDaFuncao.js"></script>-->
-	<script src="./src/index.js" defer type="module"></script>
-</body>
+</main>
 <footer class="footer">
 	<p style="text-align: left;">Feito por: Charlie e Gustavo</p>
 	<p style="text-align: left;">Email: <a href="mailto:charliebftm@gmail.com">charliebftm@gmail.com</a></p>
 </footer>
+	<script src="./src/index.js" defer type="module"></script>
+</body>
 </html>
