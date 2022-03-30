@@ -1,12 +1,7 @@
-//import { Autor } from "./Autor.js";
-//autor = require("./Autor");
-//import { Texto } from "./Texto.js";
-//texto = require("./Texto");
-//
-//import { index } from "./index.js"
-//index = require("./index.js");
-//
+import { Autor } from "./Autor.js";
+import { Texto } from "./Texto.js";
 
+/* Index ------------------------------------------------------------------------------------------------ */
 
 const scote = new Autor("Fausto", "Scote", "Ciências Sociais");
 const ceccarelli = new Autor("Paulo", "Ceccarelli", "Psicanalista");
@@ -23,7 +18,8 @@ const textoTransformandoAUniversidade = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"esse é um texto que fala sobre as pessoas trans na universidade. esse é um texto que fala sobre as pessoas trans na universidade.esse é um texto que fala sobre as pessoas trans na universidade "
 );
 
 const textoSeraQueTemosDireito = new Texto(
@@ -34,7 +30,8 @@ const textoSeraQueTemosDireito = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"esse texto fala sobre o acesso e a permanência de pessoas trans na universidade.esse texto fala sobre o acesso e a permanência de pessoas trans na universidadeesse texto fala sobre o acesso e a permanência de pessoas trans na universidade"
 );
 
 const textoUmEstudoEtnografico = new Texto(
@@ -45,7 +42,8 @@ const textoUmEstudoEtnografico = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"esse texto fala da Prostituição masculina e seus desafios. esse texto fala da Prostituição masculina e seus desafios"
 );
 
 const textoAInvencaoDaHomossexualidade = new Texto(
@@ -56,7 +54,8 @@ const textoAInvencaoDaHomossexualidade = new Texto(
 	"homossexuais",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"nesse texto Ceccarelli discorre sobre a história da homossexualidade. nesse texto Ceccarelli discorre sobre a história da homossexualidade.nesse texto Ceccarelli discorre sobre a história da homossexualidade."
 );
 
 const textoUmProblemaDeGenero = new Texto(
@@ -67,7 +66,8 @@ const textoUmProblemaDeGenero = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"um texto clássico de judith Butler. um texto clássico de judith Butler.um texto clássico de judith Butler.um texto clássico de judith Butler.um texto clássico de judith Butler.um texto clássico de judith Butler."
 );
 
 const textoAExperienciaDaCidade = new Texto(
@@ -78,7 +78,8 @@ const textoAExperienciaDaCidade = new Texto(
 	"LGBTQIA+",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"esse texto fala sobre a experiência da cidade para pessoas trans. esse texto fala sobre a experiência da cidade para pessoas trans"
 );
 
 const textoAProstituicaoComo = new Texto(
@@ -89,7 +90,8 @@ const textoAProstituicaoComo = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"discorrendo sobre as dificuldades enfrentadas pelas pessoas trans, a autora destaca a prostituição como alternativa..."
 );
 
 const textoAutobiografiasTrans = new Texto(
@@ -100,7 +102,8 @@ const textoAutobiografiasTrans = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"esse texto trans várias referências sobre pessoas trans, a exemplo de João Nery"
 );
 
 const textoTransSexualidade = new Texto(
@@ -111,7 +114,8 @@ const textoTransSexualidade = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"tudo que você precisa saber sobre transexualidade. tudo que você precisa saber sobre transexualidade. tudo que você precisa saber sobre transexualidade"
 );
 
 const textoTransfeminismo = new Texto(
@@ -122,15 +126,11 @@ const textoTransfeminismo = new Texto(
 	"trans",
 	"qualqer coisa",
 	"qualqer coisa",
-	"qualqer coisa"
+	"qualqer coisa",
+	"transfeminismo, um tema necessário dentro dos estudos de gênero. transfeminismo, um tema necessário dentro dos estudos de gênero. transfeminismo, um tema necessário dentro dos estudos de gênero"
 );
 
-
-
-
-/* 
-		Crie um array "textDatabase" com 10 Textos com diferentes títulos. Depois crie uma função "searchByTitle" que recebe como argumentos um array "a", e uma string "searchTerm", e retorna um novo array, contendo somente os Textos cujo título COMEÇA COM o "searchTerm" */
-let textDataBase = [];
+export let textDataBase = [];
 // adicionando os textos criados dentro do array
 textDataBase.push(
 	textoTransformandoAUniversidade,
@@ -144,42 +144,3 @@ textDataBase.push(
 	textoTransSexualidade,
 	textoTransfeminismo
 );
-
-function searchByTitle(a, searchTerm) {
-	let newArray = [];
-	for (let i = 0; i < a.length; i++) {
-		if (a[i].titulo.toLowerCase().includes(searchTerm.toLowerCase())) {
-			newArray.push(a[i]);
-		}
-	}
-	return newArray;
-}
-
-
-let resultado = searchByTitle(textDataBase, "trans")
-
-console.log(searchByTitle(resultado, "trans "));
-
-
-
-// barra de busca:
-
-//tentar fazer em inglês
-
-//ver se  título contem alguma palavra.
-//.includes()
-
-// colocar com o case sensive (não se importar com a capitalização)[
-
-// colocar o termo buscado em tolowercase e comparar com o texto em to lowerCase
-
-
-// fazer a lista aparecer na tela com o array textdatabase
-
-
-//module.exports = tentativaDaFuncao;
-
-
-
-
-

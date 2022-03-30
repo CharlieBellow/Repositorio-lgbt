@@ -5,23 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Repositório LGBT</title>
-	<link rel="stylesheet" href="style.css">
+	<!-- o reset tá interferindo aqui -->
+	<!--<link rel="stylesheet" href="./css/reset.css">-->
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 </head>
 <body>
-	<div class="caixas">
+	<nav class="boxes">
 		<div class="header">
-			<header class="menu">
+			<header class="header__menu">
 				<div>
 					<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" height="10%" width="5%">
 				</div>
-				<div class="titulos">
-				<div class="titulos">Home</div>
-				<div class="titulos">Contato</div>
-				<div class="titulos"><a href="./sobre/sobre.html">Sobre</a></div>
-				<div class="titulos">Contribua</div>
-				<div class="titulos">Ajuda</div>
+				<div class="titles">
+				<div class="titles">Contato</div>
+				<div class="titles">Home</div>
+				<div class="titles"><a href="./sobre/sobre.html">Sobre</a></div>
+				<div class="titles">Contribua</div>
+				<div class="titles">Ajuda</div>
 				</div>
 				
 			</header>
@@ -29,10 +37,10 @@
 			<main>
 					<!--<h1 style="text-align: center;">Repositório LGBT</h1>-->
 			</main>
-		<div class="conteudo">
-			<div class="roxo">
-				<section class="filtro">
-					<form method="post" action="#" class="formFiltro">
+		<div class="content">
+			<div class="filter__ret--purple">
+				<section class="filter__section">
+					<form method="post" action="#" class="filter__form">
 							<!--<fieldset>-->
 							<!--<legend>FILTRO:</legend>-->
 							<!-- para cada categoria criada, vai ser criada mais um input -->
@@ -55,15 +63,15 @@
 					</form>
 				</section>
 			</div>
-			<div class="texto">
-				<div class="busca">
-						<form name="form" class="buscar" method="post" action="#">
-							<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="barraDeBusca">
-							<button type="submit" class="button" value="Enviar">Pesquisar</button><br>
+			<div class="search">
+				<div class="search__text">
+						<form name="form" class="search__toLookFor" method="post" action="#">
+							<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="search__searchBar">
+							<input type="submit" class="search__button" value="Pesquisar"><br>
 							<br>
 						</form>
 				</div>
-				<aside class="bloco">
+				<aside class="block">
 
 					<!--fazer os links dos textos-->
 					<!-- para acada texto adicionado será criada uma div com o link pra essa página -->
@@ -78,7 +86,7 @@
 	<!--<script  src="./tentativaDaFuncao.js"></script>-->
 	<script src="./src/index.js" defer type="module"></script>
 </body>
-<footer>
+<footer class="footer">
 	<p style="text-align: left;">Feito por: Charlie e Gustavo</p>
 	<p style="text-align: left;">Email: <a href="mailto:charliebftm@gmail.com">charliebftm@gmail.com</a></p>
 </footer>
