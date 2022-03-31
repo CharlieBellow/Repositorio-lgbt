@@ -9,65 +9,77 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style-texto.css">
+	<!--<link rel="stylesheet" href="./css/style-texto.css">-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link rel="stylesheet" href="./css/reset.css">
+
+	<link rel="stylesheet" href="./css/partes/base.css">
+	<link rel="stylesheet" href="./css/partes/header.css">
+
+	<link rel="stylesheet" href="./css/partes/footer.css">
+
+	<link rel="stylesheet" href="./css/partes/aside.css">
+
+	<link rel="stylesheet" href="./css/partes/filter.css">
+	
+	<link rel="stylesheet" href="./css/partes/searchBar.css">
 	
 </head>
 <body>
 	<div class="caixas">
-		<div class="header">
-			<header class="menu">
-				<div>
-					<img src="../assets/repositorio lgbt.png" alt="favicon" height="10%" width="5%" aling="left">
-				</div>
-				<div class="titulos">
-				<div class="titulos"><a href="../repos.html">Home</a></div>
-				<div class="titulos">Contato</div>
-				<div class="titulos"><a href="../sobre/sobre.html">Sobre</a></div>
-				<div class="titulos">Contribua</div>
-				<div class="titulos">Ajuda</div>
-				</div>
-				
+		<div class="header--div">
+			<header class="header">
+					<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" height="10%" width="5%" aling="left">
+					<nav>
+						<ul> 
+							<li class="header__links"><a href="../search.html">Home</a></li>
+							<li class="header__links">Contato</li>
+							<li class="header__links"><a href="./sobre.html">Sobre</a></li>
+							<li class="header__links">Contribua</li>
+							<li class="header__links">Ajuda</li>
+						</ul>
+					</nav>				
 			</header>
 		</div>
-			<main>
-					<!--<h1 style="text-align: center;">Repositório LGBT</h1>-->
-			</main>
-		<div class="conteudo">
-			<div class="roxo">
-				<section class="filtro">
-					<form method="post" action="#" class="formFiltro">
-							<!--<fieldset>-->
-							<!--<legend>FILTRO:</legend>-->
-							<h3 class="h3">Filtro:</h3>
-							<input type="checkbox" name="lésbica" value="sim">lésbica<br>
-							<input type="checkbox" name="gay" value="sim">gay<br>
-							<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
-							<input type="checkbox" name="travestis" value="sim">travestis<br>
-							<input type="checkbox" name="transexuais" value="sim">transexuais<br>
-							<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
-							<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
-							<input type="checkbox" name="artigos" value="sim">artigos<br>
-							<input type="checkbox" name="dissertações" value="sim">dissertações<br>
-							<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
-							<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
-							<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
-							<input type="checkbox" name="diversidade" value="sim">diversidade<br>
-							<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
-							<!--</fieldset>-->
-					</form>
-				</section>
+		<div class="float__btn">
+        <button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question"></i> &#12299;
+        </button>
+      </div> 
+		<div class="content">
+
+			<div class="filter__ret--purple content ">
+				<form method="post" action="#" class="filter__form">
+					<h3 class="h3">Filtro:</h3>
+					<input type="checkbox" name="lésbica" value="sim">lésbica<br>
+					<input type="checkbox" name="gay" value="sim">gay<br>
+					<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
+					<input type="checkbox" name="travestis" value="sim">travestis<br>
+					<input type="checkbox" name="transexuais" value="sim">transexuais<br>
+					<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
+					<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
+					<input type="checkbox" name="artigos" value="sim">artigos<br>
+					<input type="checkbox" name="dissertações" value="sim">dissertações<br>
+					<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
+					<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
+					<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
+					<input type="checkbox" name="diversidade" value="sim">diversidade <br>
+					<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
+					
+				</form>
 			</div>
-			<div class="texto">
-				<div class="busca">
-						<form class="buscar" method="post" action="#">
-							<input type="search" name="busca" list="pesquisa" placeholder="pessoas trans" rows="500px" size="60" aria-label="Digite seu campo de busca" class="barraDeBusca">
-							<button type="button">Pesquisar</button><br>
-							<br>
-						</form>
-				</div>
-				<aside class="bloco">
-				<!--fazer os links dos textos-->
+	<main>
+		<section class="search content filter__flex">
+			<div class="search__text">
+				<form name="form" class="search__toLookFor" method="post" action="#">
+					<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="search__searchBar">
+					<input type="submit" class="search__button" value="Pesquisar"><br>
+					<br>
+			</form>
+		</div>
+
+		<aside class="block">
+			<!--fazer os links dos textos-->
         	<div class="flexbox">
 						<h2>Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior</h2><br>
             <h3>Resumo sugerido: </h3> <br>
@@ -78,12 +90,12 @@
 						<p>A ideia partiu de uma dificuldade que encontrei durante meu mestrado, onde não achava textos interessantes para minha escrita. A maioria dos textos que encontrava eram texto atrasados, que reproduziam  a lógica cisheternormativa, e reproduziam muitos preconceitos. Por isso resolvi reunir aqui textos que realmente sejam interessantes.</p>
 						
 						<p>Além o texto você encontra um resumo do que se trata o texto,  não aquele resumo de artigo que a gente lê, acha que o texto vai ser ótimo, e depois de lido, a cara de decepção fica estampada na nossa cara! rsrsrs Então aqui não tem enrolação, fizemos com todo carinho um mini fichamento dos textos pra você/! para</p>
-
+						
 						<p>Nossos textos estão separados por categoria, então você pode buscar o seu texto por assunto ou por tipo. Para achar o seu texto, é só pesquisar nessa barra de busca, como se fosse o Google, só que de texto LGBT. Você também pode usar o filtro e selecionar os assuntos que você quer que tenha no texto. Ex: homens trans, mulheres trans, pansexualidade, artigos, dissertações, etc...<br><br>
-            <strong>Palavras-chave:</strong> Travestilidades. Transexualidades. Universidade..
+							<strong>Palavras-chave:</strong> Travestilidades. Transexualidades. Universidade..
             </p>
             <br> <br>
-
+						
           	<p>Baixe o arquivo completo 
 							<a href="./scote - Trans-formando a universidade_ um estudo__sobre o acesso e a permanência de pessoas Trans__no Ensino Superior.pdf">aqui</a> 
 						</p> <br> <br>
@@ -92,73 +104,86 @@
 						</p>
 					</div>
 					<!-- incluir uma div com o campo: "como citar esse artigo" com a opção de botão pra pessoa copiar a citação -->
-				<div class="citacao"><h3>Como citar:</h3> <br><br>
-					<div class="br-textarea large">
-					<label for="textarea-id1">No texto:</label><br><br>
-					<textarea name="noTexto" id="textarea-id1" cols="40" rows="4" maxlength="300" readonly="true">Citação Direta: (SCOTE, 2020, p. 0)
+					<div class="citacao"><h3>Como citar:</h3> <br><br>
+						<div class="br-textarea large">
+							<label for="textarea-id1">No texto:</label><br><br>
+							<textarea name="noTexto" id="textarea-id1" cols="40" rows="4" maxlength="300" readonly="true">Citação Direta: (SCOTE, 2020, p. 0)
 								Citação Indireta: Scote (2020, p. 0)
-					</textarea>
-						<div class="text-base">
-							<span class="current"></span>
+							</textarea>
+							<div class="text-base">
+								<span class="current"></span>
+							</div>
+						</div>
+						<br>
+						
+						<div class="br-textarea large">
+							<label for="textarea-id2">Nas referências:</label><br><br>
+							<textarea name="nasReferencias" id="textarea-id2" cols="39" rows="8" readonly="true">SCOTE, F. D.; GARCIA, M. R. V. Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior. In: PERSPECTIVA, REVISTA DO CENTRO DE CIÊNCIAS DA EDUCAÇÃO, Florianópolis, v. 38, n. 2 p. 01-25, abr./jun. 2020</textarea>
+							<div class="text-base">
+								<span class="current"></span>
+							</div>
 						</div>
 					</div>
-					<br>
-
-					<div class="br-textarea large">
-						<label for="textarea-id2">Nas referências:</label><br><br>
-						<textarea name="nasReferencias" id="textarea-id2" cols="39" rows="8" readonly="true">SCOTE, F. D.; GARCIA, M. R. V. Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior. In: PERSPECTIVA, REVISTA DO CENTRO DE CIÊNCIAS DA EDUCAÇÃO, Florianópolis, v. 38, n. 2 p. 01-25, abr./jun. 2020</textarea>
-						<div class="text-base">
-							<span class="current"></span>
-						</div>
-					</div>
-					</div>
-
+					
 					<div class="coment">
 						<!--estrelas flexpsition: flex end row
-								txt.textarea button-->
-						<div class="br-textarea large">
-							<label for="textarea-id3">Deixe seu cometário sobre esse texto:</label><br><br>
-							<textarea name="nasReferencias" id="textarea-id3" placeholder="Deixe um comentário..."></textarea>
+							txt.textarea button-->
+							<div class="br-textarea large">
+								<label for="textarea-id3">Deixe seu cometário sobre esse texto:</label><br><br>
+								<textarea name="nasReferencias" id="textarea-id3" placeholder="Deixe um comentário..."></textarea>
 								<div class="text-base">
 									<span class="current"></span>
 									<span class="nota">
 										<p class="iconComent nota">Nota: </p>
 										<button type="submit" class="nota">Enviar</button>
 									</span>
+								</div>
 							</div>
-				</div>
-				</div>
-
-						<!-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
-
+						</div>
+						
+				<!-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
+				
 				<!-- o titulo não vai mais ser um link-->
-			
+				
 				<!-- colocar vairas caixinhas com os comentários e colocar do lado a nota de cada um... e as fotos de cada pessoa -->
 				<div class="comentarios">
-						<span class="comentarioTeste">
-							<div class="perfil"><img src="./male-54.jpg" width="10%" name="foto de perfil"><p>Caio Prado</p> 
-							</div>
-								<p class="iconComentario"> 4</p>
-							</span>
-							<p name="comentario" id="textareaComentario" cols="91" rows="5" readonly="true">Gostei muito do texto. Fala sobre o ingresso de pessoas trans no ensino superior com muia propriedade. O texto me rendeu várias citações pra minha dissertação de mestrado. É um texto de referência pra quem pesquisa o assunto.</p>
+					<span class="comentarioTeste">
+						<div class="perfil"><img src="./male-54.jpg" width="10%" name="foto de perfil"><p>Caio Prado</p> 
 						</div>
-
-						<div class="comentarios">
-						<span class="comentarioTeste">
-							<div class="perfil"><img src="./female-57.jpg" width="10%" name="foto de perfil"><p>Mirela Valentina</p>
-							</div>
-								<p class="iconComentario"> 3</p>
-							</span>
-							<p name="comentario" id="textareaComentario" cols="91" rows="5" readonly="true">Esse texto mudou minha vida! Super recomendo</p>
+						<p class="iconComentario"> 4</p>
+					</span>
+					<p name="comentario" id="textareaComentario" cols="91" rows="5" readonly="true">Gostei muito do texto. Fala sobre o ingresso de pessoas trans no ensino superior com muia propriedade. O texto me rendeu várias citações pra minha dissertação de mestrado. É um texto de referência pra quem pesquisa o assunto.</p>
+				</div>
+				
+				<div class="comentarios">
+					<span class="comentarioTeste">
+						<div class="perfil"><img src="./female-57.jpg" width="10%" name="foto de perfil"><p>Mirela Valentina</p>
 						</div>
-				</section>
-
-				</aside>
-			</div>
+						<p class="iconComentario"> 3</p>
+					</span>
+					<p name="comentario" id="textareaComentario" cols="91" rows="5" readonly="true">Esse texto mudou minha vida! Super recomendo</p>
+				</div>
+			</section>
+			
+		</aside>
 	</div>
+</div>
+</main>
 </body>
-<footer>
-	<p style="text-align: left;">Feito por: Charlie e Gustavo</p>
-	<p style="text-align: left;">Email: <a href="mailto:charliebftm@gmail.com">charliebftm@gmail.com</a></p>
+<footer class="footer">
+	<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="footer__logo">
+	<ul class="footer__social">
+      <li><a href="mailto:charliebftm@gmail.com" class="footer__midia">charliebftm@gmail.com</a></li>
+    </ul>
+
+	<nav>
+			<ul class="footer__nav"> 
+				<li class="footer__links">Home</li>
+				<li class="footer__links">Contato</li>
+				<li class="footer__links"><a href="./sobre/sobre.html">Sobre</a></li>
+				<li class="footer__links">Contribua</li>
+				<li class="footer__links">Ajuda</li>
+			</ul>
+		</nav>
 </footer>
 </html>

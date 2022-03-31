@@ -97,16 +97,6 @@ float:active {
   opacity: 0;
 }
 
-quando clicar no X do filtro:
-
-filtro:active { 
-  opacity: 0;
-  deslizar da direita para esquerda;
-}
-
-float:active {
-  opacity: 1;
-}
 
 
 

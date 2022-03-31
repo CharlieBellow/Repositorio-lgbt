@@ -1,92 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sobre</title>
-		<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../style.css">
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+		rel="stylesheet">
+	<!--<link rel="stylesheet" href="../style.css">-->
+
+	<link rel="stylesheet" href="./css/reset.css">
+
+	<link rel="stylesheet" href="./css/partes/base.css">
+	<link rel="stylesheet" href="./css/partes/header.css">
+
+	<link rel="stylesheet" href="./css/partes/footer.css">
+
+	<link rel="stylesheet" href="./css/partes/aside.css">
+
+	<link rel="stylesheet" href="./css/partes/filter.css">
+
+	<link rel="stylesheet" href="./css/partes/searchBar.css">
+
 </head>
+
 <body>
 	<div class="caixas">
-		<div class="header">
-			<header class="menu">
-				<div>
-					<img src="../assets/repositorio lgbt/linha.png" alt="favicon" height="10%" width="5%" aling="left">
-				</div>
-				<div class="titulos">
-				<div class="titulos"><a href="../repos.html">Home</a></div>
-				<div class="titulos">Contato</div>
-				<div class="titulos">Sobre</div>
-				<div class="titulos">Contribua</div>
-				<div class="titulos">Ajuda</div>
-				</div>
-				
+		<div class="header--div">
+			<header class="header">
+				<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" height="10%" width="5%" aling="left">
+				<nav>
+					<ul>
+						<li class="header__links"><a href="../search.html">Home</a></li>
+						<li class="header__links">Contato</li>
+						<li class="header__links"><a href="./sobre.html">Sobre</a></li>
+						<li class="header__links">Contribua</li>
+						<li class="header__links">Ajuda</li>
+					</ul>
+				</nav>
 			</header>
 		</div>
-			<main>
-					<!--<h1 style="text-align: center;">Repositório LGBT</h1>-->
-			</main>
-		<div class="conteudo">
-			<div class="roxo">
-				<section class="filtro">
-					<form method="post" action="#" class="formFiltro">
-							<!--<fieldset>-->
-							<!--<legend>FILTRO:</legend>-->
-							<h3 class="h3">Filtro:</h3>
-							<input type="checkbox" name="lésbica" value="sim">lésbica<br>
-							<input type="checkbox" name="gay" value="sim">gay<br>
-							<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
-							<input type="checkbox" name="travestis" value="sim">travestis<br>
-							<input type="checkbox" name="transexuais" value="sim">transexuais<br>
-							<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
-							<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
-							<input type="checkbox" name="artigos" value="sim">artigos<br>
-							<input type="checkbox" name="dissertações" value="sim">dissertações<br>
-							<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
-							<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
-							<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
-							<input type="checkbox" name="diversidade" value="sim">diversidade <br>
-							<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
-							<!--</fieldset>-->
-					</form>
-				</section>
+		<div class="float__btn">
+			<button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question"></i> &#12299;
+			</button>
+		</div>
+		<div class="content">
+	
+			<div class="filter__ret--purple content ">
+				<form method="post" action="#" class="filter__form">
+					<h3 class="h3">Filtro:</h3>
+					<input type="checkbox" name="lésbica" value="sim">lésbica<br>
+					<input type="checkbox" name="gay" value="sim">gay<br>
+					<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
+					<input type="checkbox" name="travestis" value="sim">travestis<br>
+					<input type="checkbox" name="transexuais" value="sim">transexuais<br>
+					<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
+					<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
+					<input type="checkbox" name="artigos" value="sim">artigos<br>
+					<input type="checkbox" name="dissertações" value="sim">dissertações<br>
+					<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
+					<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
+					<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
+					<input type="checkbox" name="diversidade" value="sim">diversidade <br>
+					<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
+	
+				</form>
 			</div>
-			<div class="texto">
-				<div class="busca">
-						<form class="buscar" method="post" action="#">
-							<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="barraDeBusca">
-							<button type="button">Pesquisar</button><br>
+			<main>
+				<section class="search content filter__flex">
+					<div class="search__text">
+						<form name="form" class="search__toLookFor" method="post" action="#">
+							<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60"
+								aria-label="Digite seu campo de busca" class="search__searchBar">
+							<input type="submit" class="search__button" value="Pesquisar"><br>
 							<br>
 						</form>
-				</div>
-				<aside class="bloco">
+					</div>
+
+				<aside class="block">
 
 					<!--fazer os links dos textos-->
-					
-						<h2>Sobre</h2>
-						<p>Esse site tem o objetivo de reunir textos acadêmicos escritos por pessoas LGBT e textos com temáticas LGBT.</p>
 
-						<p>A ideia partiu de uma dificuldade que encontrei durante meu mestrado, onde não achava textos interessantes para minha escrita. A maioria dos textos que encontrava eram texto atrasados, que reproduziam  a lógica cisheternormativa, e reproduziam muitos preconceitos. Por isso resolvi reunir aqui textos que realmente sejam interessantes.</p>
-						
-						<p>Além o texto você encontra um resumo do que se trata o texto,  não aquele resumo de artigo que a gente lê, acha que o texto vai ser ótimo, e depois de lido, a cara de decepção fica estampada na nossa cara! rsrsrs Então aqui não tem enrolação, fizemos com todo carinho um mini fichamento dos textos pra você/! para</p>
+					<h2>Sobre</h2>
+					<p>Esse site tem o objetivo de reunir textos acadêmicos escritos por pessoas LGBT e textos com temáticas LGBT.
+					</p>
 
-						<p>Nossos textos estão separados por categoria, então você pode buscar o seu texto por assunto ou por tipo. Para achar o seu texto, é só pesquisar nessa barra de busca, como se fosse o Google, só que de texto LGBT. Você também pode usar o filtro e selecionar os assuntos que você quer que tenha no texto. Ex: homens trans, mulheres trans, pansexualidade, artigos, dissertações, etc...</p>
+					<p>A ideia partiu de uma dificuldade que encontrei durante meu mestrado, onde não achava textos interessantes
+						para minha escrita. A maioria dos textos que encontrava eram texto atrasados, que reproduziam a lógica
+						cisheternormativa, e reproduziam muitos preconceitos. Por isso resolvi reunir aqui textos que realmente
+						sejam interessantes.</p>
 
-						<p>tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse 
-							<a href="mailto:charliebftm@gmail.com">Email</a> 
-						</p>
+					<p>Além o texto você encontra um resumo do que se trata o texto, não aquele resumo de artigo que a gente lê,
+						acha que o texto vai ser ótimo, e depois de lido, a cara de decepção fica estampada na nossa cara! rsrsrs
+						Então aqui não tem enrolação, fizemos com todo carinho um mini fichamento dos textos pra você/! para</p>
+
+					<p>Nossos textos estão separados por categoria, então você pode buscar o seu texto por assunto ou por tipo.
+						Para achar o seu texto, é só pesquisar nessa barra de busca, como se fosse o Google, só que de texto LGBT.
+						Você também pode usar o filtro e selecionar os assuntos que você quer que tenha no texto. Ex: homens trans,
+						mulheres trans, pansexualidade, artigos, dissertações, etc...</p>
+
+					<p>tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse
+						<a href="mailto:charliebftm@gmail.com">Email</a>
+					</p>
 				</aside>
 			</div>
-	</div>
+		</div>
+	</main>
 </body>
-<footer>
-	<p style="text-align: left;">Feito por: Charlie e Gustavo</p>
-	<p style="text-align: left;">Email: <a href="mailto:charliebftm@gmail.com">charliebftm@gmail.com</a></p>
+<footer class="footer">
+	<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="footer__logo">
+	<ul class="footer__social">
+		<li><a href="mailto:charliebftm@gmail.com" class="footer__midia">charliebftm@gmail.com</a></li>
+	</ul>
+
+	<nav>
+		<ul class="footer__nav">
+			<li class="footer__links">Home</li>
+			<li class="footer__links">Contato</li>
+			<li class="footer__links"><a href="./sobre/sobre.html">Sobre</a></li>
+			<li class="footer__links">Contribua</li>
+			<li class="footer__links">Ajuda</li>
+		</ul>
+	</nav>
 </footer>
+
 </html>

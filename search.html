@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Repositório LGBT</title>
 	<!--<link rel="stylesheet" href="./css/style.css">-->
-	
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="./css/reset.css">
 
@@ -21,89 +24,90 @@
 	<link rel="stylesheet" href="./css/partes/aside.css">
 
 	<link rel="stylesheet" href="./css/partes/filter.css">
-	
+
 	<link rel="stylesheet" href="./css/partes/searchBar.css">
 
 </head>
+
 <body>
 	<header class="header">
 		<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="header__logo">
 		<nav class="header__nav">
-			<ul> 
+			<ul>
 				<li class="header__links">Home</li>
 				<li class="header__links">Contato</li>
-				<li class="header__links"><a href="./sobre/sobre.html">Sobre</a></li>
+				<li class="header__links"><a href="./sobre.html">Sobre</a></li>
 				<li class="header__links">Contribua</li>
 				<li class="header__links">Ajuda</li>
 			</ul>
 		</nav>
 	</header>
 
-		<div class="float__btn">
-        <button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question"></i> &#12299;
-        </button>
-      </div> 
-		<div class="content">
+	<div class="float__btn">
+		<button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question"></i> &#12299;
+		</button>
+	</div>
+	<div class="content">
 
-      
-			<div class="filter__ret--purple content ">
-					
+		<div class="filter__ret--purple content ">
+			<form method="post" action="#" class="filter__form">
+				<h3 class="h3">Filtro:</h3>
+				<input type="checkbox" name="lésbica" value="sim">lésbica<br>
+				<input type="checkbox" name="gay" value="sim">gay<br>
+				<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
+				<input type="checkbox" name="travestis" value="sim">travestis<br>
+				<input type="checkbox" name="transexuais" value="sim">transexuais<br>
+				<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
+				<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
+				<input type="checkbox" name="artigos" value="sim">artigos<br>
+				<input type="checkbox" name="dissertações" value="sim">dissertações<br>
+				<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
+				<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
+				<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
+				<input type="checkbox" name="diversidade" value="sim">diversidade <br>
+				<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
 
-				<form method="post" action="#" class="filter__form">
-					<h3 class="h3">Filtro:</h3>
-					<input type="checkbox" name="lésbica" value="sim">lésbica<br>
-					<input type="checkbox" name="gay" value="sim">gay<br>
-					<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
-					<input type="checkbox" name="travestis" value="sim">travestis<br>
-					<input type="checkbox" name="transexuais" value="sim">transexuais<br>
-					<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
-					<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
-					<input type="checkbox" name="artigos" value="sim">artigos<br>
-					<input type="checkbox" name="dissertações" value="sim">dissertações<br>
-					<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
-					<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
-					<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
-					<input type="checkbox" name="diversidade" value="sim">diversidade <br>
-					<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
-					
-				</form>
-			</div>
-	<main>
-	<section class="search content filter__flex">
-		<div class="search__text">
-			<form name="form" class="search__toLookFor" method="post" action="#">
-				<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="search__searchBar">
-				<input type="submit" class="search__button" value="Pesquisar"><br>
-				<br>
 			</form>
 		</div>
-		<aside class="block content .filter__flex">
+		<main>
+			<section class="search content filter__flex">
+				<div class="search__text">
+					<form name="form" class="search__toLookFor" method="post" action="#">
+						<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60"
+							aria-label="Digite seu campo de busca" class="search__searchBar">
+						<input type="submit" class="search__button" value="Pesquisar"><br>
+						<br>
+					</form>
+				</div>
+				<aside class="block content .filter__flex">
 
 					<!--fazer os links dos textos-->
 					<!-- para acada texto adicionado será criada uma div com o link pra essa página -->
 
 
-		</aside>
-		<p>tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse <a href="mailto:charliebftm@gmail.com">Email</a></p>
-	</section>
-	<!--<script  src="./tentativaDaFuncao.js"></script>-->
-</main>
+				</aside>
+				<p>tem algum texto que gostaria de incluir aqui? entre em contato comigo nesse <a
+						href="mailto:charliebftm@gmail.com">Email</a></p>
+			</section>
+			<!--<script  src="./tentativaDaFuncao.js"></script>-->
+		</main>
+		<script src="./src/index.js" defer type="module"></script>
+</body>
 <footer class="footer">
 	<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="footer__logo">
 	<ul class="footer__social">
-      <li><a href="mailto:charliebftm@gmail.com" class="footer__midia">charliebftm@gmail.com</a></li>
-    </ul>
+		<li><a href="mailto:charliebftm@gmail.com" class="footer__midia">charliebftm@gmail.com</a></li>
+	</ul>
 
 	<nav>
-			<ul class="footer__nav"> 
-				<li class="footer__links">Home</li>
-				<li class="footer__links">Contato</li>
-				<li class="footer__links"><a href="./sobre/sobre.html">Sobre</a></li>
-				<li class="footer__links">Contribua</li>
-				<li class="footer__links">Ajuda</li>
-			</ul>
-		</nav>
+		<ul class="footer__nav">
+			<li class="footer__links">Home</li>
+			<li class="footer__links">Contato</li>
+			<li class="footer__links"><a href="./sobre/sobre.html">Sobre</a></li>
+			<li class="footer__links">Contribua</li>
+			<li class="footer__links">Ajuda</li>
+		</ul>
+	</nav>
 </footer>
-	<script src="./src/index.js" defer type="module"></script>
-</body>
+
 </html>
