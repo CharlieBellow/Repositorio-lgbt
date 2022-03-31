@@ -1,0 +1,190 @@
+/* colocar uma classe com o nome flexbox ajuda a escrever puco código? */
+
+.flexbox {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+}
+
+
+.quote {
+  /*position: absolute;*/
+  /*width: 282px;*/
+  /*height: 372px;*/
+  /*top: 250px;*/
+  /*margin-left: 650px;*/
+  padding: 10px;
+  border: 2px solid var(--texto);
+  background-color: var(--light-green);
+  color: var(--texto);
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-left: 2em;
+
+}
+
+#textarea-id1,
+#textarea-id2 {
+  border: 0.1em solid var(--texto);
+  padding: 0.3em;
+  margin-bottom: 1em;
+  max-width: 18.5em;
+  min-height: 13.5em;
+  font-size: 0.9em;
+  font-weight: bold;
+  
+}
+
+
+/*.texto.quote {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+/* comentários ------------------------- */
+.iconComent::after {
+  font-family: 'Material Icons';
+  color: var(--texto);
+  /*content: "\e838";*/
+  content: "\f09a \f09a \f09a \f09a \f09a";
+
+
+}
+
+.comment {
+  /*padding-left: 344px;*/
+  margin: 16px;
+  font-size: 16px;
+  background-color: var(--light-green);
+  padding: 16px;
+
+
+}
+
+#textarea-id3 {
+  font-size: 16px;
+  padding: 16px;
+  width: 495px;
+  height: 90px;
+}
+
+.evaluation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 6px;
+  align-items: center;
+
+}
+
+.evaluation button {
+  background-color: var(--light-purple);
+  color: var(--purple);
+  opacity: 0.8;
+  padding: 8px;
+  margin: 8px;
+  align-items: center;
+}
+
+.evaluation button:hover {
+  opacity: 1;
+}
+
+
+.comment__icon {
+  color: var(--green);
+}
+
+.comment__icon:before {
+  font-family: 'Material Icons';
+  content: "\f09a";
+  color: var(--green);
+
+}
+
+.comment__test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 550px;
+  font-size: 16px;
+  margin: 16px 0px 8px 16px;
+  font-weight: bold;
+  padding: 16px 0px 0px 0px;
+
+}
+
+.perfil img {
+  margin-right: 10px;
+}
+
+#textareaComentario {
+  padding: 8px;
+  margin: 8px;
+}
+
+/* coloquei o nome dos perfis acima */
+div.perfil {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* fazendo o nome da pessoa ser clicável */
+div.perfil p {
+  opacity: 0.8;
+}
+
+
+div.perfil p:hover {
+  opacity: 1;
+}
+
+
+/* no leiaute atual de desktop, tenho que mudar as unidades de medidas de pixel para rem ou em pra que tudo se adapte a tela maiores 
+
+- talvez seja melhor usar o grid em alguns momentos
+
+*/
+
+/* organizar isso depois */
+@media screen and (max-width: 480px) {
+
+  /* celular */
+  /* 
+  - colocar o float bottom fixo na tela para o filtro e colocar a opção da pessoa abir e fechar e sse filtro (ele vai abrir e fechar com um botão, mas o efeito vai ser ele fazendo um swipe pra direita e para esquerda.) 
+  - pra deixar esse float bottom, é necessário dar um espaço nas bordas pra o conteúdo não ficar em cima.
+
+  - tem que diminuir o tamanho da barra de pesquisa
+
+  colocar a caixa "como citar" para baixo do texto (ou float bottom também)
+
+
+  */
+
+}
+
+@media screen and (max-width: 768px) {
+  /*tablet*/
+  /*
+  corrigir o menu
+
+  ajeitar o padding das laterais
+
+  ver como fica melhor a caixa como citar
+  
+  
+  */
+}
+
+@media screen and (min-width: 1024px) {
+  .flexbox {
+
+    padding-left: calc((100% - 940px)/2);
+    padding-right: calc((100% - 940px)/2);
+
+
+  }
+}
+/*  apertando Shift + Alt eu crio vários cursores */
