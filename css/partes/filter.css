@@ -2,65 +2,100 @@
 
 .float__btn{
 	position: fixed;
-	float: top;
-	top: 60px;
-	left: 20px;
-	z-index: 100;
+	/*float: top;*/
+	top: 183px;
+	left: -2px;
+	z-index: 10;
+  opacity: 1;
+  content: "\300B"
 }
 
   .btnPesquisarInput, .btnPesquisarBtn , .btnMaisBotoesBtn, .btnMaisBotoesGrupo{
     display: inline-block;
+    content: "\300B"
   }
 
   .btnCircular{
-    border-radius: 50%;
+    border-radius: 0px 100px 100px 0px;
+    content: "\300B"
   }
 
   .btnPrincipal{
     font-size: 20px;
-    padding: 15px;
+    padding: 10px;
     background-color: var(--light-purple);
-    border: 1px solid black;
+    height: 350px;
+    width: 0px;
+    content: "\300B"
   }
 
   .btnSecundario{
     font-size: 15px;
-    padding: 10px;
+    padding: 11px;
+    content: "\300B"
   }
 
   .header__menu div:first-child {
-    height: 20%;
+    height: 21%;
+  }
+
+  .fa {
+    content: "\300B"
   }
 
 
-.filter__section {
-
-}
-
-
+/* fixar o filtro na tela */
 .filter__ret--purple {
+  position: fixed;
+  z-index: -100;
+  opacity: 0.2; /*trocar pra 0 depois*/
   
 }
+/* active */
+/*.filter__ret--purple:active {*/
+    /*width: 17.9em;*/
+    /*height: 350px;*/
+    /*width: 286.4px;*/
+    /*height: 500px;*/
+    /*background: var(--light-purple);*/
+    /*border-radius: 0px 100px 100px 0px;*/
+    /*opacity: 1;*/
+    /*top: 11.5em; */
+    /*
+    não fica mais preso embaixo do header*/
 
-.filter__form{
+    /* adicionar sse ícone pra voltar  o filtro 
+    content: css: 	
+\300A html: &#12298;*/
+    
+/*}*/
 
-}
+/*.filter__form:active {*/
+    /*margin-top: 0.2em;*/
+    /*font-size: 0.7em;;*/
+    
+  /*}*/
 
-.filter__form input{
-  
-}
+  /*.filter__form input:active {*/
+    /*margin-top: 0.4em;*/
+    /*margin-left: 2em;*/
+    /*padding-left: 0.62em;*/
+    /*margin-right: 0.62em;*/
+  /*}*/
 
-form .h3 {
-
-}
+  /*form, .h3:active {*/
+  /*padding-top: 1em;*/
+  /*margin-left: 2em;*/
+  /*}*/
 
 /* fixar o filtro na tela */
-.filter__ret--purple{
-  /*position: relative;*/
-  /*position: absolute;*/
-  /*position: fixed;*/
-  /*z-index: 10;*/
-}
+  /*.filter__ret--purple:active {*/
+    /*position: fixed;*/
+  /*}*/
+
+
+  
+
 
 
 /* filtro nas telas grandes ok */
@@ -72,15 +107,21 @@ form .h3 {
   }
 
   .filter__ret--purple {
-    
     width: 17.9em;
     height: 31.25em;
+    /*width: 286.4px;*/
+    /*height: 500px;*/
     background: var(--light-purple);
     border-radius: 0px 100px 100px 0px;
+    opacity: 1;
+    top: 5.7em; /*não fica mais preso embaixo do header*/
+    
+    
   }
 
   .filter__form{
     margin-top: 1em;
+    
   }
 
   .filter__form input{
@@ -91,16 +132,23 @@ form .h3 {
   }
 
   form .h3 {
-  padding-top: 0.5em;
+  padding-top: 1em;
   margin-left: 2em;
   }
 
 /* fixar o filtro na tela */
   .filter__ret--purple{
-    /*position: relative;*/
-    /*position: absolute;*/
     position: fixed;
     
+    
+    
   }
+
+  .float__btn{
+	
+	z-index: -100;
+  opacity: 0; /*trocar pra 0 depois*/
+  
+}
 
 }
