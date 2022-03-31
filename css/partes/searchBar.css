@@ -1,0 +1,56 @@
+/* BARRA DE BUSCA ------------------ */
+
+.search {
+  margin: 3.75em 12.5em 0px 12.5em;
+}
+
+
+/* text-transform: captalize */
+
+div .search {
+  /*padding-left: 18.75em;*/
+  text-align: center;
+  margin-left: 20%
+}
+
+.search__searchBar{
+  /*position: absolute;*/
+  max-width: 32.5em;
+  height: 2.5em;
+  left: 22em;
+  top: 9.375em;
+  font-size: 16px;
+  font-weight: thin;
+  /* colocar o texto mais pro lado */
+  padding-left: 1em;
+  background: #FFFFFF;
+  border: 2px solid var(--light-purple);
+  box-sizing: border-box;
+  border-radius: 1.5em;
+  opacity: 0.7;
+  
+}
+
+.search__searchBar:hover {
+  opacity: 1;
+}
+
+.search__button {
+  /*position: absolute;*/
+  width: 7.5em;
+  height:  2.5em;
+  left: 45.3125em;
+  top: 9.375em;
+  background: var(--light-purple);
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: bold;
+  /* fazer o botão "pesquisar"mudar de cor quando passa o mouse */
+  opacity: 0.9;
+}
+
+.search__button :hover {
+  opacity: 1;
+}

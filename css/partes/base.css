@@ -1,0 +1,113 @@
+* {
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none; 
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #74487D;
+  --light-purple: #DE84F0;
+  --light-green: #B6F06C;
+  --texto: #333333;
+  --green: #95CB50;
+}
+
+/* incluir os comentários na página texto e separar os arquivos css */
+/* fazer aquele esquema de aproveitar o mesmo html (e ver se funciona com o CSS tbm)  */
+/* separar os arquivos CSS um pra cada página (apagar o que não é utilizado na página específica) */
+
+/* na página texto:
+	< !-- incluir uma div com o campo: "como citar esse artigo"com a opção de botão pra pessoa copiar a citação -->< !-- incluir os comentários do texto e referenciar as 4.5 estrelas da página de busca -->
+*/
+
+body {
+  background-color: white;
+  font-family: 'Open-sans', sans-serif;
+}
+
+
+/* FILTRO E TEXTO (CONTEÚDO) -------- */
+.search {
+/* display: flex;
+  flex-direction: row;*/
+  padding-right: 6%;
+  padding-left: 6%;
+  /*text-align: center;*/
+}
+
+
+
+
+@media screen and (max-width: 767.98px) {
+
+  div .search{
+    margin: 10%;
+
+  }
+
+  .search__searchBar {
+    /* position: absolute; */
+    margin-bottom: 10px;
+    max-width: 22.5em;
+  }
+
+  .block {
+  text-align: justify;
+  margin: 0;
+  }
+
+  /* desenhar o float button */
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+        /* aqui eu mantenho todo o conteúdo da tela m 940 px - pra cumpri o grid que eu aprendi nas aulas de figma */
+    }
+}
+/* 
+resolver o CSS:
+
+- seguir as aulas de layout responsivo (site appperia) e começar pelo design do moblile
+
+- quando clicar no float:
+filtro:active { 
+  opacity: 1;
+  fazer ele deslizar da esquerda para direita
+}
+
+float:active {
+  opacity: 0;
+}
+
+quando clicar no X do filtro:
+
+filtro:active { 
+  opacity: 0;
+  deslizar da direita para esquerda;
+}
+
+float:active {
+  opacity: 1;
+}
+
+
+
+- esconder o filtro:
+opacity: 0;
+
+
+OBS.: usar o z-index para fazer o filtro ficar por baixo de tudo.
+
+- para adicionar o evento de click:
+usa o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança
+
+
+*/

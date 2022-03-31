@@ -1,0 +1,27 @@
+/* FILTRO --------------------------- */
+.filter__ret--purple {
+  width: 17.9em;
+  height: 31.25em;
+  margin: 0px;
+  background: var(--light-purple);
+  border-radius: 0px 100px 100px 0px;
+}
+
+.filter__form input{
+  margin-top: 1em;
+  margin-left: 2em;
+  padding-left: 0.62em;
+  margin-right: 0.62em;
+}
+
+form .h3 {
+padding-top: 0.5em;
+margin-left: 2em;
+}
+
+/* fixar o filtro na tela */
+.filter__ret--purple{
+  /*position: relative;*/
+  /*position: absolute;*/
+  position: fixed;
+}

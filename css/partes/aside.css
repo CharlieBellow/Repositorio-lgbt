@@ -1,0 +1,46 @@
+/* TEXTO CORRIDO (RESULTADO DAS BUSCAS)------- */
+.block {
+  text-align: justify;
+  margin:  2rem 7rem;
+  min-width: 10rem; 
+  /*padding-right: 170px;*/
+}
+
+a {
+  margin-bottom: 4px;
+}
+
+h3 a{
+  color: var(--purple);
+  opacity: 0.7;
+  max-width: 90%;
+ /* essa desgraça não quer ficar em azul, é necessário para que o usuário saiba que esse texto pode ser clicável */
+  
+}
+h3 a:hover{
+  opacity: 1;
+}
+
+/* falta fazer no menu de home */
+
+/* adicionar uma estrela */
+
+.icon::before {
+  font-family: 'Material Icons';
+  /*content: "\e838";*/
+  content: "\f09a";
+  color: var(--green);
+  /* aumentar o tamanho da estrela */
+}
+
+.icon {
+  color: var(--green);
+  /*display: row;*/
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
