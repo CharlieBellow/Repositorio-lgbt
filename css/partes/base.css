@@ -36,8 +36,12 @@ body {
   padding-right: 6%;
   padding-left: 6%;
   /*text-align: center;*/
-}
+  margin-top: 3.75em; 
+  margin-bottom: 12.5em;
+  
 
+
+}
 
 
 
@@ -70,6 +74,12 @@ body {
         padding-left: calc((100% - 940px)/2);
         padding-right: calc((100% - 940px)/2);
         /* aqui eu mantenho todo o conteúdo da tela m 940 px - pra cumpri o grid que eu aprendi nas aulas de figma */
+    }
+
+    .search {
+      /* margem esquerda do filter */
+      margin-left: 10.5em;
+      text-align: center;
     }
 }
 /* 

@@ -17,7 +17,12 @@
 	<link rel="stylesheet" href="./css/partes/header.css">
 
 	<link rel="stylesheet" href="./css/partes/footer.css">
+
+	<link rel="stylesheet" href="./css/partes/aside.css">
+
+	<link rel="stylesheet" href="./css/partes/filter.css">
 	
+	<link rel="stylesheet" href="./css/partes/searchBar.css">
 
 </head>
 <body>
@@ -34,7 +39,7 @@
 		</nav>
 	</header>
 	
-		<section class="filter__section">
+	
 			<div class="filter__ret--purple content ">
 				<form method="post" action="#" class="filter__form">
 					<h3 class="h3">Filtro:</h3>
@@ -54,9 +59,8 @@
 					<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
 				</form>
 			</div>
-	</section>
 	<main>
-	<section class="search content">
+	<section class="search content filter__flex">
 		<div class="search__text">
 			<form name="form" class="search__toLookFor" method="post" action="#">
 				<input type="search" name="busca" list="pesquisa" placeholder="faça sua busca aqui" rows="500px" size="60" aria-label="Digite seu campo de busca" class="search__searchBar">
@@ -64,7 +68,7 @@
 				<br>
 			</form>
 		</div>
-		<aside class="block content">
+		<aside class="block content .filter__flex">
 
 					<!--fazer os links dos textos-->
 					<!-- para acada texto adicionado será criada uma div com o link pra essa página -->

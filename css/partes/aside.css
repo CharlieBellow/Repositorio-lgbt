@@ -10,7 +10,8 @@
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: inherit;
+    
 
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -26,7 +27,7 @@
     text-align: justify;
 
     margin-bottom: 2rem;
-    min-width: 70vw;
+  
 }
 
 h3 {
@@ -60,13 +61,14 @@ h3 {
 
 @media screen and (min-width: 1024px) {
     .block {
-      /*display: flex;*/
-      /*justify-content: space-between;*/
-      /*margin-left: 25rem;*/
-      /*align-items: right;*/
+      
+    padding-left: calc((100% - 940px)/2);
+    padding-right: calc((100% - 940px)/2);
 
-    align-items: inherit;
-    max-width: 70vw;
-    }
     
+    }
+
+    .title, .description {
+      margin-bottom: 0.5em;
+    }
 }
