@@ -39,16 +39,17 @@ searchButton.addEventListener("click", function (e) {
 
 
 // exercício: fazer a função do filtro: -----------------------------------------------------
-// pensar no filtro (filtrar por categoria e descrição)
-// na busca pela descrição
+// - ok? - pensar no filtro (filtrar por categoria e descrição)
+// - ok? - na busca pela descrição
 
 // - para adicionar o evento de click:
-//usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança
+// usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança. 
+// pedir ajuda no CSS e HTML
 
 
 // - ok +/- - aprimorar o HTML e CSS (utilizar o BEM para criação de classes)
 
-// quando fizer a busca colocar o termo buscado com uma query na URL
+// - não entendi o que é - quando fizer a busca colocar o termo buscado com uma query na URL
 // fazer a pagina index se conectar com a página search.html
 
 
