@@ -1,16 +1,45 @@
 /* FILTRO --------------------------- */
 
+.float__btn{
+	position: fixed;
+	float: top;
+	top: 60px;
+	left: 20px;
+	z-index: 100;
+}
+
+  .btnPesquisarInput, .btnPesquisarBtn , .btnMaisBotoesBtn, .btnMaisBotoesGrupo{
+    display: inline-block;
+  }
+
+  .btnCircular{
+    border-radius: 50%;
+  }
+
+  .btnPrincipal{
+    font-size: 20px;
+    padding: 15px;
+    background-color: var(--light-purple);
+    border: 1px solid black;
+  }
+
+  .btnSecundario{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .header__menu div:first-child {
+    height: 20%;
+  }
+
+
 .filter__section {
 
 }
 
 
 .filter__ret--purple {
-  width: 17.9em;
-  height: 31.25em;
-  margin: 0px;
-  background: var(--light-purple);
-  border-radius: 0px 100px 100px 0px;
+  
 }
 
 .filter__form{
@@ -18,15 +47,11 @@
 }
 
 .filter__form input{
-  margin-top: 1em;
-  margin-left: 2em;
-  padding-left: 0.62em;
-  margin-right: 0.62em;
+  
 }
 
 form .h3 {
-padding-top: 0.5em;
-margin-left: 2em;
+
 }
 
 /* fixar o filtro na tela */
