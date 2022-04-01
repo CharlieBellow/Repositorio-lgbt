@@ -1,5 +1,59 @@
 /* colocar uma classe com o nome flexbox ajuda a escrever puco código? */
 
+/* se precisar usa o flex-wrap: wrap - pra ele quebrar a linha quando acabar o espaço definido pra a caixa então quando não couber mais no elemento pai, qubra pra próxima coluna pra juntar as duas: flex-flow: column wrap */
+
+
+/* 
+no meu site
+
+colocar todo o filtro e a outra parte toda em display flex pra não ficar tendo que alinhar margem esquerda.
+e colocar mais espaço para o conteúdo principal e menos para o filtro. então usa o flex-grow: 10; no conteúdo do texto. depois disso vê como faz.
+
+- para distribuir o espaço disponível entre a caixa como citar e o texto, eu tenho que colocar mais espaço pro texto:
+flex-grow: 1; o espaço que sobrou vai pra lista. se eu colocar 3,
+fica 2 pra o elemento que estou pegando e 1 pra os outros elementos 
+
+
+observar:
+
+- o flex-shrink: 2;
+diminui os elementos para que caibam na tela. faz o contrário do flex-grow. se eu colocar 0 ele não vai diminuir o valor que eu passo diz quantas vezes o elemento vai diminuir. nesse exemplo vai diminuir duas vezes mais flex-shrink: 2;
+
+ para juntar o flex grow com o flex shrink usa:
+flex: 1(grow) 1(shrink) 
+
+o flex-basis: 25% tem mais prioridade em cima do width então pode ser útil em alguns casos. e pode ser colocado como terceiro argumento do flex
+
+flex: 1(flex-grow) 1(flex-shrink) 25%(flex-basis)
+
+
+
+ - colocar esse no filtro  
+  se colocar 
+  flex-shrink: 0; ele diz que ninguém vai diminuir de tamanho,
+  
+
+- para fazer a caixa de como citar, envolve o texto e a caixa como citar em um pai e coloca: 
+flex-wrap: wrap; quebre para a próxima linha caso não haja tamanho disponível 
+
+- quando coloca align-items no flex junto com flex-direction: column, os eixos vertical e horizontal mudam,
+então tem que resetar o algn-itens qd tiver o column junto,
+pra isso usa o algn-itens: initial 
+
+- para fazer com que os elementos fiquem um abaixo do outro,
+é só deixar a altura automática. pra isso usa o height: auto
+
+- o margin: auto,serve pra alinhar no centro itens que não tem texto pra usar o text-align
+
+
+* para o mobile:
+é legal colocar o tamanho mobile até 768 e depois disso já é desktop:
+@media(max-width: 768px) 
+
+*/
+
+
+
 .flexbox {
   display:flex;
   align-items: flex-start;
