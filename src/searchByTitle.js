@@ -8,6 +8,14 @@ export function searchByTitle(a, searchTerm) {
 	return newArray;
 }
 
+// criar a classe
+// pegar as checkbox selecionadas
+// adicionar na classe essas checkbox
+// adicionar as funções como métodos da classe
+// criar um baco de textos
+// (fazer ao contrário)
+
+// fazer 3 exercícios do hacker rank 
 
 // pensar no filtro (filtrar por categoria e descrição)
 // na busca pela descrição

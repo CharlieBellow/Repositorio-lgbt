@@ -1,6 +1,6 @@
 /* colocar uma classe com o nome flexbox ajuda a escrever puco código? */
 
-/* se precisar usa o flex-wrap: wrap - pra ele quebrar a linha quando acabar o espaço definido pra a caixa então quando não couber mais no elemento pai, qubra pra próxima coluna pra juntar as duas: flex-flow: column wrap */
+/* se precisar usa o flex-wrap: wrap - pra ele quebrar a linha quando acabar o espaço definido pra a caixa então quando não couber mais no elemento pai, quebra pra próxima coluna pra juntar as duas: flex-flow: column wrap */
 
 
 /* 
@@ -49,6 +49,26 @@ pra isso usa o algn-itens: initial
 * para o mobile:
 é legal colocar o tamanho mobile até 768 e depois disso já é desktop:
 @media(max-width: 768px) 
+
+
+## GRID --
+
+/*essa definição diz que quando o elemento estiver com o mouse em cima e com a classe .ativo vai executa esse codigo
+.menu__link:hover,
+.menu__link.ativo {
+  border-bottom: 2px solid #0073e6;
+   cria uma borda azul embaixo do menu quando passa o mouse 
+}
+
+
+  /* definindo a área do grid 
+  .elemento {
+  grid-template-areas: "cabecalho"
+  "conteudo"
+  "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+  }
 
 */
 

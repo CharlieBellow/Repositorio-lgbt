@@ -1,3 +1,69 @@
+/* organizar o código em vários arquivos
+
+# position absolute/relativo
+
+ position: absolute;
+    /* como coloquei que o .banner  seria position relative, os elementos aqui serão organizados relativo ao elemento pai, e não à página toda como é o padrão
+
+    .banner {
+    position: relative;
+    /* colocar o position relative aqui faz com que os filhos dessa classe banner (que estão com o position absolute)fiquem relativos a esse elemento pai, ou seja, relativo a classe banner  
+
+    /* diz que o elemento tem 100% do tamanho da página menos 72px que é o tamanho do menu 
+    .banner__imagem {
+        height: calc(100vh - 72px);
+    }
+
+    cursor: pointer;
+
+    /* deixando a transição do hover mais suave 
+    transition: all .1s ease-in-out;
+
+    /* caluclo da largura do filtro 
+calc(100vw - 945px)
+
+    /* diz pra imagem não se repetir caso ela seja menor do que o espaço em que foi colocada
+    background-repeat: no-repeat;
+    /* faz a imagem ocupar todo o fundo da caixa 
+    background-size: cover;
+    /* fazendo a borda arredondada 
+    border-radius: 100%;
+    
+    ## é interessante screver as estilização em ordem alfabética; porém os elementos é interessante colocar por ordem em que aparecem no HTML. 
+    
+    ex.:
+
+    .titulo {
+        align items
+      }
+
+
+    .pessoas {
+      align-item:center;
+      display: flex;
+      justify-content:
+      z-index: 1
+    }
+
+
+    @media screen and (min-width: 0) {
+    .cabecalho {
+
+        /* fazendo a quebra do menu com a imagem em coluna 
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        /* voltando a colocar a logo e o menu um d lado do outro 
+        flex-direction: row;
+      
+    }
+}
+  
+*/
+
+
 .header {
   /*display: flex;*/
   /*justify-content: space-between;*/

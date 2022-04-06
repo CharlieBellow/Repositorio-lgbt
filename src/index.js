@@ -43,14 +43,15 @@ searchButton.addEventListener("click", function (e) {
 // - ok? - na busca pela descrição
 
 // - para adicionar o evento de click:
-// usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança. 
+// usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança do filtro. 
 // pedir ajuda no CSS e HTML
 
 
 // - ok +/- - aprimorar o HTML e CSS (utilizar o BEM para criação de classes)
 
-// - não entendi o que é - quando fizer a busca colocar o termo buscado com uma query na URL
+// - não entendi o que é (é a query string?) - quando fizer a busca colocar o termo buscado com uma query na URL
 // fazer a pagina index se conectar com a página search.html
+
 
 
 // - ok - organizar os arquivos em cada .js 
