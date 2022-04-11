@@ -28,6 +28,11 @@ body {
   font-family: 'Open-sans', sans-serif;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 /* FILTRO E TEXTO (CONTEÚDO) -------- */
 .search {

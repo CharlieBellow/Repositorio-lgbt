@@ -43,29 +43,29 @@
 		</nav>
 	</header>
 
-	<div class="float__btn">
-		<button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question"></i> &#12299;
+	<div class="float__btn flex" >
+		<button onclick="openModal()" class="btn btn-warning btnCircular btnPrincipal" name="float-filter" ><i class="fa fa-question">&#12299;</i>
 		</button>
 	</div>
-	<div class="content">
+	<div class="content flex">
 
 		<div class="filter__ret--purple content ">
 			<form method="post" action="#" class="filter__form">
 				<h3 class="h3">Filtro:</h3>
-				<input type="checkbox" name="lésbica" value="sim">lésbica<br>
-				<input type="checkbox" name="gay" value="sim">gay<br>
-				<input type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
-				<input type="checkbox" name="travestis" value="sim">travestis<br>
-				<input type="checkbox" name="transexuais" value="sim">transexuais<br>
-				<input type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
-				<input type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
-				<input type="checkbox" name="artigos" value="sim">artigos<br>
-				<input type="checkbox" name="dissertações" value="sim">dissertações<br>
-				<input type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
-				<input type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
+				<input class="checkbox" type="checkbox" name="lesbica" value="sim">lésbica<br>
+				<input class="checkbox" type="checkbox" name="gay" value="sim">gay<br>
+				<input class="checkbox" type="checkbox" name="bissexualidade" value="sim">bissexualidade<br>
+				<input class="checkbox" type="checkbox" name="travestis" value="sim">travestis<br>
+				<input class="checkbox" type="checkbox" name="transexuais" value="sim">transexuais<br>
+				<input class="checkbox" type="checkbox" name="pessoasTrans" value="sim">pessoas trans<br>
+				<input class="checkbox" type="checkbox" name="pansexualidade" value="sim">pansexualidade<br>
+				<input class="checkbox" type="checkbox" name="artigos" value="sim">artigos<br>
+				<input type="checkbox" name="dissertacoes" value="sim">dissertações<br>
+				<input class="checkbox" type="checkbox" name="escritosPorTrans" value="sim">escritos por pessoas trans<br>
+				<input class="checkbox" type="checkbox" name="escritoPorLGBT" value="sim">escritos por pessoas LGBT<br>
 				<input type="checkbox" name="assexualidade" value="sim">assexualidade<br>
-				<input type="checkbox" name="diversidade" value="sim">diversidade <br>
-				<input type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
+				<input class="checkbox" type="checkbox" name="diversidade" value="sim">diversidade <br>
+				<input class="checkbox" type="checkbox" name="lgbtfobia" value="sim">lgbtfobia <br>
 
 			</form>
 		</div>
@@ -92,6 +92,7 @@
 			<!--<script  src="./tentativaDaFuncao.js"></script>-->
 		</main>
 		<script src="./src/index.js" defer type="module"></script>
+		<!--<script src="./src/modal.js"></script>-->
 </body>
 <footer class="footer">
 	<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="footer__logo">

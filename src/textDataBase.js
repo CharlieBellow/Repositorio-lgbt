@@ -10,6 +10,8 @@ const jesus = new Autor("Jaqueline", "Jesus", "filosofa");
 const vergueiro = new Autor("Viviane", "Vergueiro", "filosofa");
 const vieira = new Autor("Helena", "Vieira", "filosofa");
 
+const butler = new Autor("Judith", "Butler", "pós-estruturalista")
+
 const textoTransformandoAUniversidade = new Texto(
 	"Trans-formando a universidade: um estudo sobre o acesso e a permanência de pessoas Trans no Ensino Superior",
 	scote,
@@ -60,7 +62,7 @@ const textoAInvencaoDaHomossexualidade = new Texto(
 
 const textoUmProblemaDeGenero = new Texto(
 	"Um problema de gênero",
-	"butler",
+	butler,
 	2021,
 	"livro",
 	"trans",
@@ -144,3 +146,5 @@ textDataBase.push(
 	textoTransSexualidade,
 	textoTransfeminismo
 );
+
+console.log(textDataBase);
