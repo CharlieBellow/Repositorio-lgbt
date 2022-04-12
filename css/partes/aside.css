@@ -50,6 +50,9 @@ h3 {
 
 .title:hover{
   opacity: 1;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+
 }
 
 .icon::before {

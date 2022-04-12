@@ -17,12 +17,17 @@
   border: 2px solid var(--light-purple);
   box-sizing: border-box;
   border-radius: 1.5em;
-  opacity: 0.7;
+  opacity: 1;
   
 }
 
 .search__searchBar:hover {
-  opacity: 1;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  
+  
+
 }
 
 .search__button {
@@ -38,11 +43,13 @@
   border-radius: 6px;
   font-weight: bold;
   /* fazer o botão "pesquisar"mudar de cor quando passa o mouse */
-  opacity: 0.9;
+  opacity: 1;
 }
 
-.search__button :hover {
-  opacity: 1;
+.search__button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
 }
 
 

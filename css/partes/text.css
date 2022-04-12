@@ -1,78 +1,3 @@
-/* colocar uma classe com o nome flexbox ajuda a escrever puco código? */
-
-/* se precisar usa o flex-wrap: wrap - pra ele quebrar a linha quando acabar o espaço definido pra a caixa então quando não couber mais no elemento pai, quebra pra próxima coluna pra juntar as duas: flex-flow: column wrap */
-
-
-/* 
-no meu site
-
-colocar todo o filtro e a outra parte toda em display flex pra não ficar tendo que alinhar margem esquerda.
-e colocar mais espaço para o conteúdo principal e menos para o filtro. então usa o flex-grow: 10; no conteúdo do texto. depois disso vê como faz.
-
-- para distribuir o espaço disponível entre a caixa como citar e o texto, eu tenho que colocar mais espaço pro texto:
-flex-grow: 1; o espaço que sobrou vai pra lista. se eu colocar 3,
-fica 2 pra o elemento que estou pegando e 1 pra os outros elementos 
-
-
-observar:
-
-- o flex-shrink: 2;
-diminui os elementos para que caibam na tela. faz o contrário do flex-grow. se eu colocar 0 ele não vai diminuir o valor que eu passo diz quantas vezes o elemento vai diminuir. nesse exemplo vai diminuir duas vezes mais flex-shrink: 2;
-
- para juntar o flex grow com o flex shrink usa:
-flex: 1(grow) 1(shrink) 
-
-o flex-basis: 25% tem mais prioridade em cima do width então pode ser útil em alguns casos. e pode ser colocado como terceiro argumento do flex
-
-flex: 1(flex-grow) 1(flex-shrink) 25%(flex-basis)
-
-
-
- - colocar esse no filtro  
-  se colocar 
-  flex-shrink: 0; ele diz que ninguém vai diminuir de tamanho,
-  
-
-- para fazer a caixa de como citar, envolve o texto e a caixa como citar em um pai e coloca: 
-flex-wrap: wrap; quebre para a próxima linha caso não haja tamanho disponível 
-
-- quando coloca align-items no flex junto com flex-direction: column, os eixos vertical e horizontal mudam,
-então tem que resetar o algn-itens qd tiver o column junto,
-pra isso usa o algn-itens: initial 
-
-- para fazer com que os elementos fiquem um abaixo do outro,
-é só deixar a altura automática. pra isso usa o height: auto
-
-- o margin: auto,serve pra alinhar no centro itens que não tem texto pra usar o text-align
-
-
-* para o mobile:
-é legal colocar o tamanho mobile até 768 e depois disso já é desktop:
-@media(max-width: 768px) 
-
-
-## GRID --
-
-/*essa definição diz que quando o elemento estiver com o mouse em cima e com a classe .ativo vai executa esse codigo
-.menu__link:hover,
-.menu__link.ativo {
-  border-bottom: 2px solid #0073e6;
-   cria uma borda azul embaixo do menu quando passa o mouse 
-}
-
-
-  /* definindo a área do grid 
-  .elemento {
-  grid-template-areas: "cabecalho"
-  "conteudo"
-  "rodape";
-  grid-template-columns: auto;
-  grid-template-rows: 50px auto auto;
-  }
-
-*/
-
-
 
 .flexbox {
   display:flex;
@@ -80,8 +5,6 @@ pra isso usa o algn-itens: initial
   justify-content: space-between;
   
 }
-
-
 
 .quote {
   /*position: absolute;*/
@@ -96,6 +19,7 @@ pra isso usa o algn-itens: initial
   font-weight: bold;
   font-size: 0.9em;
   margin-left: 2em;
+  margin-top: 5rem;
 
 }
 
@@ -129,19 +53,20 @@ pra isso usa o algn-itens: initial
 
 .comment {
   /*padding-left: 344px;*/
-  margin: 16px;
+  margin: 16px 0 16px 0px;
   font-size: 16px;
   background-color: var(--light-green);
   padding: 16px;
-
+  /*align-items: flex-start;*/
+  width: 70%;
 
 }
 
 #textarea-id3 {
   font-size: 16px;
   padding: 16px;
-  width: 495px;
-  height: 90px;
+  width: 30.9375em;
+  height: 5.625em;
 }
 
 .evaluation {
@@ -164,8 +89,14 @@ pra isso usa o algn-itens: initial
 
 .evaluation button:hover {
   opacity: 1;
+  cursor: pointer;
+  transition: all .1s ease-in-out
 }
 
+.comments {
+
+  max-width: 70%;
+}
 
 .comment__icon {
   color: var(--green);
@@ -183,7 +114,7 @@ pra isso usa o algn-itens: initial
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 550px;
+  width: auto;
   font-size: 16px;
   margin: 16px 0px 8px 16px;
   font-weight: bold;
@@ -214,50 +145,50 @@ div.perfil p {
 
 div.perfil p:hover {
   opacity: 1;
+  cursor: pointer;
+  transition: all .1s ease-in-out
 }
 
-
-/* no leiaute atual de desktop, tenho que mudar as unidades de medidas de pixel para rem ou em pra que tudo se adapte a tela maiores 
-
-- talvez seja melhor usar o grid em alguns momentos
-
-*/
-
-/* organizar isso depois */
-@media screen and (max-width: 480px) {
-
-  /* celular */
-  /* 
-  - colocar o float bottom fixo na tela para o filtro e colocar a opção da pessoa abir e fechar e sse filtro (ele vai abrir e fechar com um botão, mas o efeito vai ser ele fazendo um swipe pra direita e para esquerda.) 
-  - pra deixar esse float bottom, é necessário dar um espaço nas bordas pra o conteúdo não ficar em cima.
-
-  - tem que diminuir o tamanho da barra de pesquisa
-
-  colocar a caixa "como citar" para baixo do texto (ou float bottom também)
-
-
-  */
-
-}
 
 @media screen and (max-width: 768px) {
-  /*tablet*/
-  /*
-  corrigir o menu
 
-  ajeitar o padding das laterais
+  /* celular */
 
-  ver como fica melhor a caixa como citar
+  .flexbox {
+  display:flex;
+  flex-direction: column;
   
-  
-  */
+  }
+
+  .quote {
+
+    margin: 3em auto
+  }
+
+  #textarea-id3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .comments {
+
+  max-width: 100%;
+}
+
+.comment {
+  padding: 16px;
+  width: auto;
+
+}
+
+
 }
 
 @media screen and (min-width: 1024px) {
   .flexbox {
 
-    padding-left: calc((100% - 940px)/2);
-    padding-right: calc((100% - 940px)/2);
+    /*padding-left: calc((100% - 940px)/2);*/
+    /*padding-right: calc((100% - 940px)/2);*/
 
 
   }

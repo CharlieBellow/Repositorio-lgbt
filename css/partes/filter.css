@@ -22,10 +22,10 @@
 
   .btnPrincipal{
     font-size: 20px;
-    padding: 10px;
+    /*padding: 10px;*/
     background-color: var(--light-purple);
-    height: 350px;
-    width: 0px;
+    height: 70vh;
+    /*width: 0px;*/
     content: "\300B"
   }
 
@@ -54,30 +54,31 @@
 }
 
 /* active */
-.filter__ret--purple:active {
-  opacity: 1;
-  /*visibility: visible;*/
-  /*width: 17.9em;*/
-    height: 350px;
-    width: 286.4px;
-    height: 500px;
-    background: var(--light-purple);
-    border-radius: 0px 100px 100px 0px;
-    /*top: 11.5em;*/
-}
+  .filter__ret--purple:active {
+    opacity: 1;
+    /*visibility: visible;*/
+    /*width: 17.9em;*/
+      height: 350px;
+      width: 286.4px;
+      width: auto;
+      height: 70vh;
+      background: var(--light-purple);
+      border-radius: 0px 100px 100px 0px;
+      /*top: 11.5em;*/
+  }
 
- .filter__form{
-    margin-top: 1em;
-    margin-left: 1em;
-    
+  .filter__form{
+    margin: 1em;
+    /*margin-left: 1em;*/
+    padding: 0 2em
     
   }
 
   .filter__form input{
-    margin-top: 0.4em;
-    margin-left: 2em;
-    padding-left: 0.62em;
-    margin-right: 0.62em;
+    margin-top: 0.5em;
+    /*margin-left: 2em;*/
+    /*padding-left: 0.62em;*/
+    /*margin-right: 0.62em;*/
   }
 /*.filter__ret--purple:active {*/
     /*width: 17.9em;*/
@@ -137,11 +138,13 @@
     position: fixed;
     float: top;
 
- 
+
     width: 17.9em;
+    width: auto;
     /*width: calc(100vw - 945px);*/
     /*position: relative;*/
     height: 31.25em;
+    height: auto;
     /*width: 286.4px;*/
     /*height: 500px;*/
     background: var(--light-purple);
@@ -153,12 +156,14 @@
     /*flex-flow: column wrap;*/
   /*flex-wrap: wrap;*/
   /*position: relative;*/
+  
     
     
   }
 
   .filter__form{
-    margin-top: 1em;
+    margin: 1em;
+    padding: 0 24px 24px 0;
     
     
   }
@@ -171,8 +176,9 @@
   }
 
   form .h3 {
-  padding-top: 1em;
-  margin-left: 2em;
+  /*padding-top: 1em;*/
+    margin-left: 2em;
+    padding: 0 24px 24px 0;
   }
 
   .float__btn{
@@ -181,6 +187,6 @@
   /*opacity: 0; */
   /*trocar pra 0 depois*/
   
-}
+  }
 
 }
