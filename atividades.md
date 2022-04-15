@@ -2,7 +2,53 @@
 
 aqui escrevo tudo que gostaria de adicionar no site.
 
-## CSS
+### JavaScript
+
+- criar a classe
+ criar a classe
+ adicionar as funções como métodos da classe
+ pegar as checkbox selecionadas
+ adicionar na classe essas checkbox
+ criar um banco de textos ? um array com os textos?
+ (fazer ao contrário)
+
+
+ pensar no filtro (filtrar por categoria e descrição)
+ na busca pela descrição
+
+
+- 2ª parte
+// criar uma nova versão do site com React.
+
+// exercício: fazer a função do filtro: -----------------------------------------------------
+
+-Filtro:active: ainda não finalizado
+- para adicionar o evento de click:
+ usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança do filtro.
+
+
+- não entendi o que é (é a query string?) 
+- quando fizer a busca colocar o termo buscado com uma query na URL
+- fazer a pagina index se conectar com a página search.html
+
+
+
+//exercicios 2  --------------
+
+// criar a classe
+// criada no arquivo searchbytitle, mas não foi importada
+
+// adicionar as funções como métodos da classe
+// adicionado mas não foi importado, não funciona
+
+
+
+
+
+
+
+
+### CSS
 
 # Filtro:
 

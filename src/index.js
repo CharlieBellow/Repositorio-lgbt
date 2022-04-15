@@ -36,39 +36,6 @@ searchButton.addEventListener("click", function (e) {
 
 });
 
-//2ª parte
-// criar uma nova versão do site com React.
-
-
-
-// exercício: fazer a função do filtro: -----------------------------------------------------
-// - ok? - pensar no filtro (filtrar por categoria e descrição)
-// - ok? - na busca pela descrição
-
-// - para adicionar o evento de click:
-// usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança do filtro. 
-// pedir ajuda no CSS e HTML
-
-
-// - ok +/- - aprimorar o HTML e CSS (utilizar o BEM para criação de classes)
-
-// - não entendi o que é (é a query string?) - quando fizer a busca colocar o termo buscado com uma query na URL
-// fazer a pagina index se conectar com a página search.html
-
-
-// - ok - organizar os arquivos em cada .js 
-
-
-
-//exercicios 2  --------------
-
-
-
-// criar a classe
-// criada no arquivo searchbytitle, mas não foi importada
-
-// adicionar as funções como métodos da classe
-// adicionado mas não foi importado, não funciona
 
 // pegar as checkbox selecionadas
 
@@ -94,13 +61,6 @@ var checkboxDiversidade = document.getElementsByName("diversidade");
 var checkboxLgbtfobia = document.getElementsByName("lgbtfobia");
 // adicionar na classe essas checkbox
 
-// criar um banco de textos ? um array com os textos?
-// (fazer ao contrário)
-
-// - ok - fazer 3 exercícios do hacker rank
-
-// pensar no filtro (filtrar por categoria e descrição)
-// na busca pela descrição
 
 
 // adicionando a classe active -----------------
@@ -134,10 +94,10 @@ btn.addEventListener(
 function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
-	const filtro = document.querySelector("filter__ret--purple")
+	const filtro = document.querySelector("btn")
 	const classActive = filtro.classList
 			
-	filtro.addEventListener("click", function () {
+	filtro.addEventListener("submit", function () {
 		const result = classActive.toggle("active")
 
 		if (result) {
