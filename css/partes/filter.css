@@ -1,19 +1,17 @@
 /* FILTRO --------------------------- */
 
+/* inutilizado -- colocar no gitIgnore esse e todos os css que não estou usando */
+
 .float__btn{
 	position: fixed;
-	float: top;
+	/*float: top;*/
 	/*top: 183px;*/
 	left: -2px;
 	/*z-index: 10;*/
-  opacity: 1;
-  content: "\300B"
+  /*opacity: 1;*/
+  content: "\300B";
+  visibility: visible;
 }
-
-  .btnPesquisarInput, .btnPesquisarBtn , .btnMaisBotoesBtn, .btnMaisBotoesGrupo{
-    display: inline-block;
-    content: "\300B"
-  }
 
   .btnCircular{
     border-radius: 0px 100px 100px 0px;
@@ -26,12 +24,6 @@
     background-color: var(--light-purple);
     height: 70vh;
     /*width: 0px;*/
-    content: "\300B"
-  }
-
-  .btnSecundario{
-    font-size: 15px;
-    padding: 11px;
     content: "\300B"
   }
 
@@ -55,7 +47,7 @@
 }
 
 /* active */
-  .filter__ret--purple:active {
+  .filter__ret--purple.active {
     opacity: 1;
     /*visibility: visible;*/
     /*width: 17.9em;*/
@@ -70,7 +62,7 @@
       
   }
 
-  .filter__form:active{
+  .filter__form.active{
     margin: 1em;
     /*margin-left: 1em;*/
     padding: 0 2em;
@@ -133,10 +125,6 @@
 /* filtro nas telas grandes ok */
 @media screen and (min-width: 1199px) {
 
-  .filter__flex {
-  
-    
-  }
 
   .filter__ret--purple {
     position: fixed;

@@ -23,18 +23,24 @@
 
 	<link rel="stylesheet" href="./css/partes/aside.css">
 
-	<link rel="stylesheet" href="./css/partes/filter.css">
-
+	
 	<link rel="stylesheet" href="./css/partes/searchBar.css">
+	
+	<!--<link rel="stylesheet" href="./css/partes/filter.css">-->
+
+	<link rel="stylesheet" href="./css/partes/floatbutton.css">
+
 
 </head>
 
 <body>
+
+	
 	<div class="caixas">
 		<div class="header--div">
 			<header class="header">
 				<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" height="10%" width="5%" aling="left" class="header__logo">
-				<nav>
+				<nav class="header__nav">
 					<ul>
 						<li class="header__links"><a href="../search.html">Home</a></li>
 						<li class="header__links">Contato</li>
@@ -45,13 +51,13 @@
 				</nav>
 			</header>
 		</div>
-		<div class="float__btn">
-			<button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question"></i> &#12299;
+		<!--<div class="float__btn">
+			<button class="btn btn-warning btnCircular btnPrincipal" name="float-filter"><i class="fa fa-question">&#12299</i>
 			</button>
-		</div>
+		</div>-->
 		<div class="content">
-	
 			<div class="filter__ret--purple content ">
+				<ion-icon class="ion-icon" name="chevron-forward-outline"></ion-icon>
 				<form method="post" action="#" class="filter__form">
 					<h3 class="h3">Filtro:</h3>
 					<input type="checkbox" name="lésbica" value="sim">lésbica<br>
@@ -111,6 +117,9 @@
 			</div>
 		</div>
 	</main>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="./src/float.js"></script>
 </body>
 <footer class="footer">
 	<img src="./assets/repositorio lgbt/coluna.png" alt="favicon" class="footer__logo">

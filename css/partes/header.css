@@ -49,6 +49,9 @@
   transition: all .1s ease-in-out;
 }
 
+/*.header__menu div:first-child {
+    height: 21%;
+  }*/
 
 @media screen and (min-width: 1024px) {
     .header{

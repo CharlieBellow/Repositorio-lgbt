@@ -91,7 +91,7 @@ btn.addEventListener(
 // modal
 
 
-function openModal() {
+/*function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
 	const filtro = document.querySelector("btn")
@@ -108,7 +108,7 @@ function openModal() {
 
 		}
 	})
-}
+}*/
 
 	/*close() {
 		// fechar Modal
@@ -130,3 +130,4 @@ span.addEventListener("click", function () {
 		span.textContent = `'c' removed; classList is now "${classes}".`;
 	}
 });*/
+
