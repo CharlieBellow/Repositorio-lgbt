@@ -39,7 +39,7 @@ searchButton.addEventListener("click", function (e) {
 
 // pegar as checkbox selecionadas
 
-var checkboxs = document.getElementsByClassName("checkbox");
+var checkboxes = document.getElementsByClassName("checkbox");
 
 var checkboxLesbica = document.getElementsByName("lesbica");
 var checkboxGay = document.getElementsByName('gay')
@@ -59,12 +59,50 @@ var checkboxAssexualidade = document.getElementsByName("assexualidade");
 var checkboxDiversidade = document.getElementsByName("diversidade");
 
 var checkboxLgbtfobia = document.getElementsByName("lgbtfobia");
+
+// CHECKBOXES -----------------------------------------------
+// pegando o valor do checkbox
+
+/*
+function getValues() {
+  var pacote = document.querySelectorAll('[name=Pacote]:checked');
+  var values = [];
+  for (var i = 0; i < pacote.length; i++) {
+    // utilize o valor aqui, adicionei ao array para exemplo
+    values.push(pacote[i].value);
+  }
+  alert(values);
+}
+
+// adicionar ação ao clique no checkbox
+var checkboxes = document.querySelectorAll('[name=Pacote]');
+for (var i = 0; i < checkboxes.length; i++) {
+  // somente nome da função, sem executar com ()
+  checkboxes[i].addEventListener('click', getValues, false);
+}
+<input type="checkbox" id="Pacote_i" name="Pacote" value="Pacote i"/>
+<input type="checkbox" id="Pacote_ii" name="Pacote" value="Pacote ii"/>
+<input type="checkbox" id="Pacote_iii" name="Pacote" value="Pacote iii"/>
+
+*/
+
+
+//var checked = document.querySelector("[name=lesbica]:checked");
+
+//function getValues() {
+//	if (checked) {
+//		alert('pegou');
+//	}
+////
+//}
+
+	//checkboxes.addEventListener("click", getValues(), false);
+
+
 // adicionar na classe essas checkbox
 
-
-
-// adicionando a classe active -----------------
-/*var btn = document.querySelector(".fa");
+	// adicionando a classe active -----------------
+	/*var btn = document.querySelector(".fa");
 btn.addEventListener(
 	"click",
 	function addActive() {
@@ -74,23 +112,30 @@ btn.addEventListener(
 	false
 );*/
 
-
-//function addActive() {
+	//function addActive() {
 	//console.log("clicou");
 	//document.querySelector(".fa").classList.add(".active");
 	//var isso = this;
 	//element.createElement(".active")
-	
+
 	//document.querySelector("float__btn").addEventListener(click);
 	//document.createElement(".active")
-//}
+	//}
 
-//active();
+	//active();
 
+	// modal
 
-// modal
+	function openModal() {
+		// abrir modal
+		// adicionar a classe active ao modal
+		const filtro = document.querySelector("btn");
+		const classActive = filtro.classList;
 
+		filtro.addEventListener("submit", function () {
+			const result = classActive.toggle("active");
 
+<<<<<<< HEAD
 /*function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
@@ -109,6 +154,15 @@ btn.addEventListener(
 		}
 	})
 }*/
+=======
+			if (result) {
+				classActive.add("active");
+			} else {
+				//classActive.remove("active");
+			}
+		});
+	}
+>>>>>>> b134f53 (responsivo ok)
 
 	/*close() {
 		// fechar Modal
