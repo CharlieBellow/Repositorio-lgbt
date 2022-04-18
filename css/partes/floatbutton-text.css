@@ -1,36 +1,34 @@
+/*inutilizado. vai para o git ignore*/
+
 /* FILTRO --------------------------- */
 /* fixar o filtro na tela */
 .filter__ret--purple {
 
-  position: fixed;
-  display: flex;
-  align-items: center;
-  /* alinha o icone de novo no centro */
-  justify-content: center;
-  flex-direction: row-reverse;
-  /*text-align: center;*/
-  /*align-content: center;*/
-  /*flex-wrap: wrap;*/
-  width: 2em;
+  /*position: fixed;*/
+  /*display: flex;*/
+    /*display: inline-block;*/
+
+  /*display: inline-block;*/
+  /*align-items: center;*/
+  /*alinha o icone de novo no centro*/
+  /*justify-content: center;*/
+  /*flex-direction: row-reverse;*/
+  /*width: 2em;*/
   /*overflow: hidden;*/
   
 
-  border-radius: 0px 100px 100px 0px;
+  /*border-radius: 0px 100px 100px 0px;*/
   /*font-size: 20px;*/
   
-  background: var(--light-purple);
+  /*background: var(--light-purple);*/
   
-  text-align: justify;
+  /*text-align: justify;
   font-size: 16px;
   padding: 11px 0;
 
-  
-  /*padding: 11px;*/
   max-height: 70vh;
-  transition: 0.5s;
-  /*width: 75vw;*/
-  /*margin-left: calc(8vw - 75vw);*/
-  /*margin-left: -75vw;*/
+  transition: 0.5s;*/
+  
   
 
   
@@ -39,57 +37,44 @@
 .ion-icon {
   position: fixed;
   opacity: 1;
-  
-}
 
-.ion-icon.active {
-  /* fazer aquele lance das setinhas mudarem de direção */
-  /*opacity: 0;*/
-  /*content: "\2039";*/
-  /*opacity: 0;*/
   
 }
 
 
 
 /* active */
-  .filter__ret--purple.active {
-      margin-left: 0;
-      width: auto;
-  /*width: 75vw;*/
-  /*margin-left: calc(8vw - 75vw);*/
+  .filter__ret--purple {
+      /*margin-left: 0;*/
+      /*width: 70vw;*/
 
   /* alinha o icone de novo na borda */
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   }
 
 
 
   .filter__form{
-    /*margin-top: 0.5em;*/
-    /*margin-left: 1em;*/
+    margin: 1em;
     padding: 0 2em;
     opacity: 0;
     
   }
-
-    .filter__form.active{
-    /*margin: 1em;*/
-    /*margin-left: 1em;*/
-    /*padding: 0 2em;*/
+/*.active*/
+    .filter__form{
+    margin: 1em;
+    padding: 0 2em;
     opacity: 1;
-    
     
   }
 
   .filter__form input{
     margin-top: 0.5em;
-    /*margin-right: 0.62em;*/
+    margin-right: 0.62em;
   }
 
   form .h3 {
-    margin-top: 0.3em;
-    font-weight: bold;
+    margin-top: 1em;
 
   }
 
@@ -98,49 +83,101 @@
 /* filtro nas telas grandes ok */
 @media screen and (min-width: 1199px) {
 
-
+  .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*flex-wrap: column wrap;*/
+    /*width: 100vw;*/
+  
+  }
   .filter__ret--purple {
     position: fixed;
+    border-radius: 0px 100px 100px 0px;
+    background: var(--light-purple);
+    max-width: 25vw;
+    
+    /*display: flex;*/
+    /*display: inline-block;*/
+    /*align-items: center;*/
+     /* alinha o icone de novo na borda */
+    /*justify-content: space-between;*/
+  /*flex-direction: row-reverse;*/
+  /*overflow: hidden;*/
+  
+  /*width: 2em;*/
+  /*width: auto;*/
+  /*width: 70vw;*/
+  /*width: ((100% - 940px)/2);*/
+  
+  /*height: auto;*/
+  /*max-height: 70vh;*/
+  
+  /*padding-right: calc((100% - 940px)/2);*/
+  /*padding: 11px 0;*/
+  /*margin-right: 300px;*/
+  /*margin-left: 0;*/
+    
+    /*font-size: 20px;*/
+    /*font-size: 16px;*/
+    /*text-align: justify;*/
+  
+  
 
-    width: auto;
-    height: auto;
+  /*transition: 0.5s;*/
+  
+
+  
+
+
+
+
+
+
+    
+    
+}
+/* .active */
+  .filter__ret--purple {
+    /*position: fixed;*/
+    /*display: flex;*/
+    /*display: inline-block;*/
+    /*width: 25vw;*/
+    
 
   /* alinha o icone de novo na borda */
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   
     
     
   }
 
   .filter__form{
-    margin: 1em;
-    /*padding: 0 24px 24px 0;*/
-    padding-right: 2em;
     opacity: 1;
     
     
   }
 
   .filter__form input{
-    margin-top: 1em;
+    /*margin-top: 1em;*/
     /*margin-left: 2em;*/
     /*padding-left: 0.62em;*/
     /*margin-right: 0.62em;*/
     
   }
+
   form .h3 {
     /*padding-top: 0.3em;*/
     /*margin-left: 2em;*/
-    padding: 0.3em 0 0 0;
-    font-weight: bold;
+    padding: 0 24px 24px 0;
   }
-  
   .ion-icon {
     /*escondendo o ícone*/
-  opacity: 0;
-  /*visibility: hidden;*/
+    opacity: 0;
   
   }
+
+  
 
 
 }

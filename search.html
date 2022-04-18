@@ -23,9 +23,10 @@
 
 	<link rel="stylesheet" href="./css/partes/aside.css">
 
-	<link rel="stylesheet" href="./css/partes/filter.css">
-
 	<link rel="stylesheet" href="./css/partes/searchBar.css">
+	
+	<link rel="stylesheet" href="./css/partes/floatbutton.css">
+	<!--<link rel="stylesheet" href="./css/partes/filter.css">-->
 
 </head>
 
@@ -43,13 +44,15 @@
 		</nav>
 	</header>
 
-	<div class="float__btn flex"  >
+	<!--<div class="float__btn flex"  >
 		<button onsubmit="openModal()" class="btn btn-warning btnCircular btnPrincipal" name="float-filter" ><i class="fa fa-question">&#12299;</i>
 		</button>
-	</div>
+	</div>-->
 	<div class="content flex">
-
 		<div class="filter__ret--purple content ">
+			<div class="ion-icon">
+				<ion-icon name="chevron-forward-outline"></ion-icon>
+			</div>
 			<form method="post" action="#" class="filter__form">
 				<h3 class="h3">Filtro:</h3>
 				<input class="checkbox" type="checkbox" name="lesbica" value="sim">lésbica<br>
@@ -91,6 +94,9 @@
 			</section>
 			<!--<script  src="./tentativaDaFuncao.js"></script>-->
 		</main>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="./src/float.js"></script>
 		<script src="./src/index.js" defer type="module"></script>
 		<!--<script src="./src/modal.js"></script>-->
 </body>

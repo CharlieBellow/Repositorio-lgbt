@@ -4,7 +4,7 @@ aqui escrevo tudo que gostaria de adicionar no site.
 
 ### JavaScript
 
-- criar a classe
+* criar a classe
  criar a classe
  adicionar as funções como métodos da classe
  pegar as checkbox selecionadas
@@ -17,12 +17,13 @@ aqui escrevo tudo que gostaria de adicionar no site.
  na busca pela descrição
 
 
-- 2ª parte
+* *2ª parte
 // criar uma nova versão do site com React.
 
 // exercício: fazer a função do filtro: -----------------------------------------------------
 
--Filtro:active: ainda não finalizado
+* Filtro:active: ainda não finalizado
+
 - para adicionar o evento de click:
  usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança do filtro.
 
@@ -31,7 +32,8 @@ aqui escrevo tudo que gostaria de adicionar no site.
 - quando fizer a busca colocar o termo buscado com uma query na URL
 - fazer a pagina index se conectar com a página search.html
 
-
+* mudar icone do filtro:
+fazer aquele lance das setinhas e mudar o icone de abrir e fechar o menu
 
 //exercicios 2  --------------
 
