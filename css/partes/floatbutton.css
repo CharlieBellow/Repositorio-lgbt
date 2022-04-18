@@ -84,7 +84,7 @@
 
   .filter__form input{
     margin-top: 0.5em;
-    /*margin-right: 0.62em;*/
+    margin-right: 0.62em;
   }
 
   form .h3 {
@@ -113,21 +113,23 @@
   }
 
   .filter__form{
-    margin: 1em;
+    margin: 1em 0;
     /*padding: 0 24px 24px 0;*/
     padding-right: 2em;
+    padding-bottom: 1em;
     opacity: 1;
     
     
   }
 
   .filter__form input{
-    margin-top: 1em;
+    /*margin-top: 1em;*/
     /*margin-left: 2em;*/
-    /*padding-left: 0.62em;*/
-    /*margin-right: 0.62em;*/
+  
+    margin-right: 0.62em;
     
   }
+
   form .h3 {
     /*padding-top: 0.3em;*/
     /*margin-left: 2em;*/
