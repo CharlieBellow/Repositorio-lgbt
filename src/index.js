@@ -126,6 +126,7 @@ btn.addEventListener(
 
 	// modal
 
+	
 function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
@@ -139,6 +140,9 @@ function openModal() {
 }
 			
 	
+
+
+
 /*function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
