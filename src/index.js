@@ -23,7 +23,7 @@ const searchButton = $("input.search__button"); // botão
 searchButton.addEventListener("click", function (e) {
 	e.preventDefault(); // para não enviar o formulário
 
-	//console.log("funcionou");
+
 	// declarar mais uma variável pra guardar os textos filtrados
 	var inputSearch = $("input.search__searchBar").value; // input de busca (esse é o meu termo buscado)
 	console.log(inputSearch);
@@ -126,23 +126,21 @@ btn.addEventListener(
 
 	// modal
 
-	
+
 function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
 	const filtro = document.querySelector("btn");
-	const classActive = filtro.classList;
 
 	filtro.addEventListener("submit", function () {
 		const result = classActive.toggle("active");
-
 	})
 }
 			
 	
 
 
-
+// fazer a função de adicionar / remover a classe active igual ao que o cara fez com o Css
 /*function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
@@ -167,18 +165,3 @@ function openModal() {
 		// remover a classe active no modal
 		document.querySelector("filter__ret--purple").classList.remove("active");
 	},*/
-	// desafio: transformar essas duas funções em uma só com o toogle() no lugar do .add e .remove
-
-
-/*const span = document.querySelector("span");
-const classes = span.classList;
-
-span.addEventListener("click", function () {
-	const result = classes.toggle("c");
-
-	if (result) {
-		span.textContent = `'c' added; classList is now "${classes}".`;
-	} else {
-		span.textContent = `'c' removed; classList is now "${classes}".`;
-	}
-});*/

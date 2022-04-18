@@ -49,7 +49,7 @@ fazer aquele lance das setinhas e mudar o icone de abrir e fechar o menu
 
 
 
-
+* na página texto:  <!-- incluir uma div com o campo: "como citar esse artigo" com a opção de botão pra pessoa copiar a citação -->
 
 
 ### CSS
@@ -61,6 +61,7 @@ usa o js pra adicionar a classe active no html e usa ela no css pra fazer a muda
 
 - colocar o float bottom fixo na tela para o filtro e colocar a opção da pessoa abir e fechar esse filtro (ele vai abrir e fechar com um botão, mas o efeito vai ser ele fazendo um swipe pra direita e para esquerda.)
 - pra deixar esse float bottom, é necessário dar um espaço nas bordas pra o conteúdo não ficar em cima.
+
 
 
 # na página texto:

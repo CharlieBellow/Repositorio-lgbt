@@ -13,11 +13,6 @@
 
 
 .quote {
-  /*position: absolute;*/
-  /*width: 282px;*/
-  /*height: 372px;*/
-  /*top: 250px;*/
-  /*margin-left: 650px;*/
   padding: 10px;
   border: 2px solid var(--texto);
   background-color: var(--light-green);
@@ -41,29 +36,21 @@
   
 }
 
-
-/*.texto.quote {
-  display: flex;
-  justify-content: space-between;
-}*/
-
 /* comentários ------------------------- */
 .iconComent::after {
   font-family: 'Material Icons';
   color: var(--texto);
-  /*content: "\e838";*/
   content: "\f09a \f09a \f09a \f09a \f09a";
 
 
 }
 
 .comment {
-  /*padding-left: 344px;*/
+
   margin: 16px 0 16px 0px;
   font-size: 16px;
   background-color: var(--light-green);
   padding: 16px;
-  /*align-items: flex-start;*/
   width: 70%;
 
 }
@@ -191,15 +178,9 @@ div.perfil p:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .flexbox {
 
-    /*padding-left: calc((100% - 940px)/2);*/
-    /*padding-right: calc((100% - 940px)/2);*/
-
-
-  }
-
-  .text > h2, h3 {
+  .text>h2, .text>h3 {
   font-size: 1.5em;
-}
+  
+  }
 }

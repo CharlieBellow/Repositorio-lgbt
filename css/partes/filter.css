@@ -1,14 +1,10 @@
 /* FILTRO --------------------------- */
-
 /* inutilizado -- colocar no gitIgnore esse e todos os css que não estou usando */
 
 .float__btn{
 	position: fixed;
-	/*float: top;*/
-	/*top: 183px;*/
 	left: -2px;
-	/*z-index: 10;*/
-  /*opacity: 1;*/
+	
   content: "\300B";
   visibility: visible;
 }
@@ -20,10 +16,8 @@
 
   .btnPrincipal{
     font-size: 20px;
-    /*padding: 10px;*/
     background-color: var(--light-purple);
     height: 65vh;
-    /*width: auto;*/
     content: "\300B"
   }
 
@@ -39,41 +33,26 @@
 /* fixar o filtro na tela */
 .filter__ret--purple {
   position: fixed;
-  /*z-index: 999;*/
+
   opacity: 0; 
-  /*trocar pra 0 depois*/
-  /*visibility: visible;*/
-  
 }
 
 /* active */
-<<<<<<< HEAD
+
   .filter__ret--purple.active {
-=======
-  .filter__ret--purple:active {
-    position: fixed;
->>>>>>> b134f53 (responsivo ok)
     opacity: 1;
-    /*visibility: visible;*/
-    /*width: 17.9em;*/
-      /*height: 350px;*/
-      /*width: 286.4px;*/
       width: auto;
       height: 65vh;
       background: var(--light-purple);
       border-radius: 0px 100px 100px 0px;
-      /*top: 11.5em;*/
+
       
       
   }
 
-<<<<<<< HEAD
   .filter__form.active{
-=======
-  .filter__form{
->>>>>>> b134f53 (responsivo ok)
+
     margin: 1em;
-    /*margin-left: 1em;*/
     padding: 0 2em;
     
     
@@ -81,112 +60,21 @@
 
   .filter__form input{
     margin-top: 0.5em;
-    /*margin-left: 2em;*/
-    /*padding-left: 0.62em;*/
-    /*margin-right: 0.62em;*/
   }
-/*.filter__ret--purple:active {*/
-    /*width: 17.9em;*/
-    /*height: 350px;*/
-    /*width: 286.4px;*/
-    /*height: 500px;*/
-    /*background: var(--light-purple);*/
-    /*border-radius: 0px 100px 100px 0px;*/
-    /*opacity: 1;*/
-    /*top: 11.5em; */
-    /*
-    não fica mais preso embaixo do header*/
-
-    /* adicionar sse ícone pra voltar  o filtro 
-    content: css: 	
-\300A html: &#12298;*/
-    
-/*}*/
-
-/*.filter__form:active {*/
-    /*margin-top: 0.2em;*/
-    /*font-size: 0.7em;;*/
-    
-  /*}*/
-
-  /*.filter__form input:active {*/
-    /*margin-top: 0.4em;*/
-    /*margin-left: 2em;*/
-    /*padding-left: 0.62em;*/
-    /*margin-right: 0.62em;*/
-  /*}*/
-
-  /*form, .h3:active {*/
-  /*padding-top: 1em;*/
-  /*margin-left: 2em;*/
-  /*}*/
-
-/* fixar o filtro na tela */
-  /*.filter__ret--purple:active {*/
-    /*position: fixed;*/
-  /*}*/
-
-
-  
-
 
 
 /* filtro nas telas grandes ok */
 @media screen and (min-width: 1199px) {
 
-<<<<<<< HEAD
-=======
-
-  .filter__ret--purple:active {
-    /*opacity: 1;*/
-    /*visibility: visible;*/
-    /*width: 17.9em;*/
-      /*height: 350px;*/
-      /*width: 286.4px;*/
-      /*width: auto;*/
-      height: auto;
-      /*background: var(--light-purple);*/
-      /*border-radius: 0px 100px 100px 0px;*/
-      /*top: 11.5em;*/
-      
-      
-  }
-
-  .filter__form:active{
-    /*margin: 1em;*/
-    /*margin-left: 1em;*/
-    /*padding: 0 2em;*/
-    
-    
-  }
->>>>>>> b134f53 (responsivo ok)
-
-
   .filter__ret--purple {
     position: fixed;
     float: top;
-
-
-    /*width: 17.9em;*/
     width: auto;
-    /*width: calc(100vw - 945px);*/
-    /*position: relative;*/
-    /*height: 31.25em;*/
     height: auto;
-    /*width: 286.4px;*/
-    /*height: 500px;*/
     background: var(--light-purple);
     border-radius: 0px 100px 100px 0px;
     opacity: 1;
     margin-bottom: 0;
-    /*top: 5.7em; */
-    /*não fica mais preso embaixo do header*/
-    /*flex-flow: column wrap;*/
-  /*flex-wrap: wrap;*/
-  /*position: relative;*/
-  
-    
-    
   }
 
   .filter__form{
@@ -204,16 +92,14 @@
   }
 
   form .h3 {
-  /*padding-top: 1em;*/
+
     margin-left: 2em;
     padding: 0 24px 24px 0;
   }
 
   .float__btn{
     visibility: hidden;
-	/*z-index: -10;*/
-  /*opacity: 0; */
-  /*trocar pra 0 depois*/
+
   
   }
 
