@@ -126,16 +126,19 @@ btn.addEventListener(
 
 	// modal
 
-	function openModal() {
-		// abrir modal
-		// adicionar a classe active ao modal
-		const filtro = document.querySelector("btn");
-		const classActive = filtro.classList;
+function openModal() {
+	// abrir modal
+	// adicionar a classe active ao modal
+	const filtro = document.querySelector("btn");
+	const classActive = filtro.classList;
 
-		filtro.addEventListener("submit", function () {
-			const result = classActive.toggle("active");
+	filtro.addEventListener("submit", function () {
+		const result = classActive.toggle("active");
 
-<<<<<<< HEAD
+	})
+}
+			
+	
 /*function openModal() {
 	// abrir modal
 	// adicionar a classe active ao modal
@@ -154,15 +157,6 @@ btn.addEventListener(
 		}
 	})
 }*/
-=======
-			if (result) {
-				classActive.add("active");
-			} else {
-				//classActive.remove("active");
-			}
-		});
-	}
->>>>>>> b134f53 (responsivo ok)
 
 	/*close() {
 		// fechar Modal
@@ -184,4 +178,3 @@ span.addEventListener("click", function () {
 		span.textContent = `'c' removed; classList is now "${classes}".`;
 	}
 });*/
-
