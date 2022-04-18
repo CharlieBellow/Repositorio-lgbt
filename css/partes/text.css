@@ -6,6 +6,12 @@
   
 }
 
+.text > h2, h3 {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+
 .quote {
   /*position: absolute;*/
   /*width: 282px;*/
@@ -192,4 +198,8 @@ div.perfil p:hover {
 
 
   }
+
+  .text > h2, h3 {
+  font-size: 1.5em;
+}
 }

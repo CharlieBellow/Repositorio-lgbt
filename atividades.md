@@ -27,6 +27,8 @@ aqui escrevo tudo que gostaria de adicionar no site.
 - para adicionar o evento de click:
  usar o js pra adicionar a classe active no html e usa ela no css pra fazer a mudança do filtro.
 
+* corrigir o icone de estrela do 2º comentário
+
 
 - não entendi o que é (é a query string?) 
 - quando fizer a busca colocar o termo buscado com uma query na URL
