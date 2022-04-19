@@ -29,11 +29,8 @@ body {
 
 /* FILTRO E TEXTO (CONTEÚDO) -------- */
 .search {
-/* display: flex;
-  flex-direction: row;*/
   padding-right: 6%;
   padding-left: 6%;
-  /*text-align: center;*/
   margin-top: 3.75em; 
   margin-bottom: 12.5em;
   
@@ -51,7 +48,6 @@ body {
   }
 
   .search__searchBar {
-    /* position: absolute; */
     margin-bottom: 10px;
     max-width: 22.5em;
   }

@@ -23,11 +23,3 @@ export class Texto {
 		return `(${this.autor.toUpperCase()}, ${this.ano}, p. 0)`;
 	}
 }
-
-/*tipo: dcumentário, artigo, ...
-  categoria: lesbicas, gays, trans
-  link: download
-  titulo: nome
-  citação: citação
-  autor: autor
-  avaliação: */

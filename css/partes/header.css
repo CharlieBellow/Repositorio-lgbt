@@ -1,26 +1,17 @@
 
 .header {
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
-  /*padding: 4px;*/
-  /*margin: 0;*/
-  /*border: 0;*/
-  /*left: 0px;*/
-  /*top: 0px;*/
   background: var(--light-green);
 
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 
-    border-bottom: 1px solid #103D4A;
+  border-bottom: 1px solid #103D4A;
 
-    /*position: absolute;*/
 }
 
 .header__logo {
@@ -49,9 +40,6 @@
   transition: all .1s ease-in-out;
 }
 
-/*.header__menu div:first-child {
-    height: 21%;
-  }*/
 
 @media screen and (min-width: 1024px) {
     .header{

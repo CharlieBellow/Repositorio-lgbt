@@ -8,15 +8,10 @@
   /* alinha o icone de novo no centro */
   justify-content: center;
   flex-direction: row-reverse;
-  /*text-align: center;*/
-  /*align-content: center;*/
-  /*flex-wrap: wrap;*/
   width: 2em;
-  /*overflow: hidden;*/
   
 
   border-radius: 0px 100px 100px 0px;
-  /*font-size: 20px;*/
   
   background: var(--light-purple);
   
@@ -25,12 +20,9 @@
   padding: 11px 0;
 
   
-  /*padding: 11px;*/
+
   max-height: 70vh;
   transition: 0.5s;
-  /*width: 75vw;*/
-  /*margin-left: calc(8vw - 75vw);*/
-  /*margin-left: -75vw;*/
   
 
   
@@ -56,27 +48,20 @@
   .filter__ret--purple.active {
       margin-left: 0;
       width: auto;
-  /*width: 75vw;*/
-  /*margin-left: calc(8vw - 75vw);*/
 
-  /* alinha o icone de novo na borda */
+    /* alinha o icone de novo na borda */
     justify-content: space-between;
   }
 
 
 
   .filter__form{
-    /*margin-top: 0.5em;*/
-    /*margin-left: 1em;*/
     padding: 0 2em;
     opacity: 0;
     
   }
 
     .filter__form.active{
-    /*margin: 1em;*/
-    /*margin-left: 1em;*/
-    /*padding: 0 2em;*/
     opacity: 1;
     
     
@@ -114,7 +99,6 @@
 
   .filter__form{
     margin: 1em 0;
-    /*padding: 0 24px 24px 0;*/
     padding-right: 2em;
     padding-bottom: 1em;
     opacity: 1;
@@ -123,16 +107,11 @@
   }
 
   .filter__form input{
-    /*margin-top: 1em;*/
-    /*margin-left: 2em;*/
-  
     margin-right: 0.62em;
     
   }
 
   form .h3 {
-    /*padding-top: 0.3em;*/
-    /*margin-left: 2em;*/
     padding: 0.3em 0 0 0;
     font-weight: bold;
   }
@@ -140,74 +119,7 @@
   .ion-icon {
     /*escondendo o ícone*/
   opacity: 0;
-  /*visibility: hidden;*/
+  
   
   }
-
-
 }
-
-
-
-/* filtros em telas diferentes */
-/* telas até de 421px até 613 */
-  /*margin-left: calc(-70%);*/
-
-   /* telas até de 613px até 765 */
-  /*margin-left: calc(-71%);*/
-
-  /* telas até de 765px até 1000 */
-  /*margin-left: calc(-72%);*/
-
-  /* telas até de 1000px até 1198 */
-  /*margin-left: calc(-73%);*/
-
-/* mantem o float button que tá certo. colaca o filter como opacity:0 e quando tiver a classe .active coloca a ele como opacity 1  e coloca o marging left.
-então quando clicar no float button vai adicionar uma classe active no filter__ret--purple e ele vai deslizar pra direita (mudando a margin-left: xvw para 0)  enquanto que o float button desaparece*/
-
-
-/* FLOATBUTOO */
-/*.float__btn.active{*/
-	/*position: fixed;*/
-	/*float: top;*/
-	/*top: 183px;*/
-	/*left: -2px;*/
-	/*z-index: 10;*/
-  /*opacity: 0;*/
-  /*content: "\300B";*/
-  /*visibility: visible;*/
-/*}*/
-
-
-  /*.btnCircular{*/
-    /*border-radius: 0px 100px 100px 0px;*/
-    /*content: "\300B"*/
-  /*}*/
-
-  /*.btnPrincipal{*/
-    /*font-size: 20px;*/
-    /*padding: 10px;*/
-    /*background-color: var(--light-purple);*/
-    /*height: 70vh;*/
-    /*width: 0px;*/
-    /*content: "\300B";*/
-    /*opacity: 1;*/
-  /*}*/
-
-  /*.btnPrincipal.active{*/
-    /*font-size: 20px;*/
-    /*padding: 10px;*/
-    /*background-color: var(--light-purple);*/
-    /*height: 70vh;*/
-    /*width: 0px;*/
-    /*content: "\300B";*/
-    /*opacity: 0;*/
-  /*}*/
-
-  /*.header__menu div:first-child {*/
-    /*height: 21%;*/
-  /*}*/
-
-  /*.fa {*/
-    /*content: "\300B"*/
-  /*}*/

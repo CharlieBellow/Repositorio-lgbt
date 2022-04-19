@@ -29,10 +29,3 @@ import { index } from "./index.js";
 		}
 	}
 
-
-
-//adicionaPublicacoesNoAutor(scote, texto1);
-
-// exportando esse arquivo que contém a função de adicionar publicacoes
-
-/*module.exports = adicionaPublicacoesNoAutor;*/
